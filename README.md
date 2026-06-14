@@ -48,20 +48,40 @@ The legal knowledge base consists of **59,829 training records** across 8 files,
 
 ## Accuracy & Evaluation
 
-Evaluated on **146 curated test samples** using 4 retrieval metrics:
+Evaluated on **146 curated test samples** drawn from 7 source datasets. The evaluation set breakdown by legal domain is documented in `evaluation/benchmark_report.txt`.
+
+### End-to-End System Performance (Production Pipeline)
+
+Config C — Vector Search (ChromaDB, all-MiniLM-L6-v2) + Situation-Aware Template Response:
 
 | Metric | Score | Description |
 |--------|------:|-------------|
-| **Precision@1** | 0.8356 | 83.6% of top-1 retrievals are relevant |
-| **Precision@3** | 0.5845 | 58.5% of top-3 retrievals are relevant |
-| **Recall@1** | 0.4071 | Top-1 captures 40.7% of all relevant content |
-| **Recall@5** | 0.8493 | Top-5 captures 84.9% of all relevant content |
-| **MRR** | 0.8413 | Mean Reciprocal Rank — first relevant result appears at rank ~1.2 on average |
-| **NDCG@5** | 0.8251 | Normalized Discounted Cumulative Gain — ranking quality score |
+| **Precision@1** | 0.5959 | 59.6% of top-1 retrievals are relevant |
+| **Precision@3** | 0.4977 | 49.8% of top-3 retrievals are relevant |
+| **Precision@5** | 0.3822 | 38.2% of top-5 retrievals are relevant |
+| **Recall@1** | 0.2694 | Top-1 captures 26.9% of all relevant content |
+| **Recall@3** | 0.5765 | Top-3 captures 57.7% of all relevant content |
+| **Recall@5** | 0.7260 | Top-5 captures 72.6% of all relevant content |
+| **MRR** | 0.6444 | Mean Reciprocal Rank |
+| **NDCG@5** | 0.6572 | Normalized Discounted Cumulative Gain |
+| **Avg latency** | 0.93s | Average response time per query |
 
-**BM25 baseline comparison**: The BM25 keyword-search baseline (Config A) achieves P@1 = 0.8356 vs vector search (Config B) P@1 = 0.5959, confirming that keyword matching is highly effective for Indian legal case-law retrieval. The vector search excels at semantic understanding of paraphrased queries.
+### Retrieval Method Comparison (Ablation)
 
-**Latency**: Average response time < 1s per query in retrieval-only mode.
+BM25 keyword retrieval (Okapi BM25) vs. dense vector search (ChromaDB + all-MiniLM-L6-v2):
+
+| Metric | BM25 | Vector Search |
+|--------|-----:|--------------:|
+| **Precision@1** | **0.8356** | 0.5959 |
+| **Precision@3** | **0.5845** | 0.4977 |
+| **Precision@5** | **0.4808** | 0.3822 |
+| **Recall@1** | **0.4071** | 0.2694 |
+| **Recall@3** | **0.6853** | 0.5765 |
+| **Recall@5** | **0.8493** | 0.7260 |
+| **MRR** | **0.8413** | 0.6444 |
+| **NDCG@5** | **0.8251** | 0.6572 |
+
+BM25 consistently outperforms vector search at top ranks (P@1: 0.8356 vs 0.5959), confirming that Indian legal queries — which frequently contain specific case names and statutory citations — benefit from exact keyword matching. Vector search offers broader recall at higher K, making it more suitable for exploratory queries.
 
 Run evaluation yourself:
 ```bash
@@ -70,7 +90,7 @@ python run_experiments.py
 
 ## Features
 
-- **RAG Chat Engine** — Semantic search over 14K legal chunks with situation-classified structured responses
+- **RAG Chat Engine** — Semantic search over 59K legal chunks with situation-classified structured responses
 - **Situation Classifier** — Auto-detects 10+ legal scenarios (fake case, divorce, DV, bail, property, consumer, cyber crime, FIR, landlord-tenant) with tailored step-by-step advice
 - **Multi-Turn Memory** — Per-user MongoDB chat sessions with 24h TTL
 - **Document Intelligence** — OCR (English + 7 Indic languages), clause extraction, risk scoring, timeline extraction, per-document Q&A

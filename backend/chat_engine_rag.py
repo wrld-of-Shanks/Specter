@@ -313,7 +313,7 @@ async def answer_query_with_rag(
             "sources": sources,
             "confidence": round(avg_confidence, 3),
             "matched_chunks": [
-                {"source": c["source"], "score": c["score"], "preview": c["text"][:120]}
+                {"source": c["source"], "score": c["score"], "text": c["text"], "preview": c["text"][:120]}
                 for c in confident_chunks
             ],
             "low_confidence": low_confidence,
