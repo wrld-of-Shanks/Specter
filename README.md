@@ -7,7 +7,7 @@ AI-powered Indian Legal Assistant with RAG pipeline, chat engine, document intel
 SPECTER uses a **Retrieval-Augmented Generation (RAG)** pipeline:
 
 1. **Query** → User asks a legal question via chat
-2. **Retrieval** → The question is converted to a vector embedding (sentence-transformers `all-MiniLM-L6-v2`) and searched against a ChromaDB vector store containing 14,001 legal chunks. Top-4 most relevant chunks are retrieved.
+2. **Retrieval** → The question is converted to a vector embedding (sentence-transformers `all-MiniLM-L6-v2`) and searched against a ChromaDB vector store containing **59,630 legal chunks** with **59,829 training records**. Top-4 most relevant chunks are retrieved.
 3. **Answer** → Retrieved chunks are formatted into a structured response with:
    - **What the Law Says** — Legal context from the database with citations
    - **Steps You Can Take** — Practical, actionable steps
@@ -15,34 +15,36 @@ SPECTER uses a **Retrieval-Augmented Generation (RAG)** pipeline:
    - **Where to Go** — Relevant courts, police stations, or authorities
 4. **Classification** → Queries are auto-classified into 10+ situation types (fake case, divorce, domestic violence, bail, property dispute, consumer, cyber crime, FIR filing, landlord-tenant, etc.) and answered with situation-specific advice templates.
 
-If a Gemini API key is configured, the retrieved chunks are sent to Gemini Flash for human-like natural language generation. Without an API key, the system falls back to **retrieval-only mode**, building structured answers directly from the legal database.
+**v2.0 uses retrieval-only mode by default** — answers are built directly from the legal database without any external API. This is a change from v1.0 which required Google Gemini. The system now works completely offline, using its own curated corpus of Indian legal texts.
 
 ### Architecture
 
 ```
 User → React Frontend → FastAPI Backend → ChromaDB (vector store)
                               ↕                  MongoDB (users, sessions, lawyers, consultations)
-                              ↕                  Gemini Flash (optional LLM generation)
                               ↕                  Redis (optional answer cache)
 ```
 
 ## Training Data
 
-The legal knowledge base consists of **23,157 data points** across 5 files, totaling **13.1 MB**:
+The legal knowledge base consists of **59,829 training records** across 8 files, totaling **~30 MB**:
 
-| Dataset | Records | Size | Content |
-|---------|---------|------|---------|
-| `optimized_legal_train.jsonl` | 12,996 | 7.3 MB | Indian Supreme Court & High Court case summaries with legal questions and answers (IPC, CrPC, Constitution, civil, criminal, family law) |
-| `indic_legal_qa_train.jsonl` | 10,000 | 5.7 MB | Legal Q&A pairs covering Indian statutes, procedural law, and landmark judgments |
-| `legal_training_data.jsonl` | 149 | 54 KB | Curated legal scenarios with expert annotations |
-| `kb_seed.jsonl` | 6 | 7 KB | Knowledge base seed entries for core legal concepts |
-| `seed_notes.jsonl` | 6 | 9 KB | Additional legal reference notes |
+| Dataset | Records | Content |
+|---------|---------|---------|
+| `optimized_legal_train.jsonl` | 12,996 | Indian Supreme Court & High Court case summaries with legal Q&A (IPC, CrPC, Constitution, civil, criminal, family law) |
+| `indic_legal_qa_train.jsonl` | 10,000 | Legal Q&A pairs covering Indian statutes, procedural law, and landmark judgments |
+| `indian_laws_training.jsonl` | 34,243 | Full text of Indian Acts (IPC, CrPC, Constitution, property, labour, tax, and more) with section-level Q&A |
+| `meera_legal_qa.jsonl` | 2,364 | Synthetic Indian legal Q&A pairs covering IPC, Constitution, and procedural law |
+| `legal_training_data.jsonl` | 149 | Curated legal scenarios with expert annotations |
+| `faq_training_data.jsonl` | 65 | Comprehensive legal FAQ (criminal, civil, constitutional, procedural law) |
+| `kb_seed.jsonl` | 6 | Knowledge base seed entries for core legal concepts |
+| `seed_notes.jsonl` | 6 | Additional legal reference notes |
 
-**Data sources**: Publicly available Indian legal documents from legislative.gov.in, indiacode.nic.in, Supreme Court judgments, and High Court rulings. All data is public domain government content.
+**Data sources**: Publicly available Indian legal documents from legislative.gov.in, indiacode.nic.in, Supreme Court judgments, High Court rulings, Hugging Face Indian legal datasets (CC-BY-SA 4.0 licensed), and Indian Kanoon. All primary legal texts are public domain government content.
 
-**Data types covered**: 15+ legal domains including Constitutional Law, Criminal Law (IPC, CrPC), Civil Law, Family Law (Hindu Marriage Act, Special Marriage Act), Property Law, Consumer Protection, Cyber Law (IT Act 2000), Labour Law, Tax Law, Environmental Law, Corporate Law, and Procedural Law.
+**Data types covered**: 15+ legal domains including Constitutional Law, Criminal Law (IPC, CrPC, Evidence Act), Civil Law, Family Law (Hindu Marriage Act, Special Marriage Act), Property Law, Consumer Protection, Cyber Law (IT Act 2000), Labour Law, Tax Law, Environmental Law, Corporate Law, and Procedural Law.
 
-**Vector store**: 14,001 indexed chunks in ChromaDB using `all-MiniLM-L6-v2` embeddings (384-dimensional vectors).
+**Vector store**: **59,630 indexed chunks** in ChromaDB using `all-MiniLM-L6-v2` embeddings (384-dimensional vectors), with 10 situation-based advice templates for common legal scenarios.
 
 ## Accuracy & Evaluation
 

@@ -62,14 +62,27 @@ def add_chunks_to_db(chunks: List[str], source: str = "legal_kb", namespace: str
         logger.info(f"All chunks for {source} already exist in collection.")
         return 0
 
-    collection.add(
-        ids=ids,
-        embeddings=valid_embeddings,
-        documents=valid_chunks,
-        metadatas=[{"source": source, "namespace": namespace, "chunk_index": i} for i in range(len(ids))]
-    )
-    logger.info(f"Added {len(ids)} chunks from '{source}' to ChromaDB.")
-    return len(ids)
+    BATCH_SIZE = 5000
+    total_added = 0
+    for start in range(0, len(ids), BATCH_SIZE):
+        end = start + BATCH_SIZE
+        batch_ids = ids[start:end]
+        batch_embs = valid_embeddings[start:end]
+        batch_chunks = valid_chunks[start:end]
+        batch_meta = [
+            {"source": source, "namespace": namespace, "chunk_index": start + i}
+            for i in range(len(batch_ids))
+        ]
+        collection.add(
+            ids=batch_ids,
+            embeddings=batch_embs,
+            documents=batch_chunks,
+            metadatas=batch_meta,
+        )
+        total_added += len(batch_ids)
+
+    logger.info(f"Added {total_added} chunks from '{source}' to ChromaDB.")
+    return total_added
 
 
 def search_chunks(query: str, top_k: int = 5, namespace: str = "global") -> List[Dict]:

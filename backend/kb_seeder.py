@@ -9,6 +9,11 @@ logger = logging.getLogger(__name__)
 SEED_FILES = [
     ("../data/processed/kb_seed.jsonl", "kb_seed"),
     ("./optimized_legal_train.jsonl", "optimized_train"),
+    ("./indic_legal_qa_train.jsonl", "indic_qa"),
+    ("../data/processed/legal_training_data.jsonl", "legal_train"),
+    ("../data/processed/faq_training_data.jsonl", "faq"),
+    ("../data/processed/meera_legal_qa.jsonl", "meera_qa"),
+    ("../data/processed/indian_laws_training.jsonl", "indian_laws"),
 ]
 
 
