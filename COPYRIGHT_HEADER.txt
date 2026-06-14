@@ -1,0 +1,9 @@
+/**
+ * SPECTER - AI Legal Assistant
+ * 
+ * Copyright (c) 2025 Shankar M Darur
+ * Licensed under the MIT License
+ * 
+ * This file is part of SPECTER Legal Assistant.
+ * For full license information, see the LICENSE file in the project root.
+ */

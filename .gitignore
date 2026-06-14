@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+venv311/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+temp_uploads/
+*.tmp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+backend/chroma_db/
+
+# Evaluation artifacts
+evaluation/*.csv
+evaluation/*.log
+
+# Generated files
+*_metrics.json
+*_report.txt
+training_report.txt
+model_metrics.json
+rag_metrics.json

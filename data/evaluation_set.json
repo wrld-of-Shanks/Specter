@@ -1,0 +1,1170 @@
+[
+  {
+    "id": "eval_001",
+    "query": "What is the legal position regarding section 103 — punishment for murder?",
+    "ground_truth_context": "Whoever commits murder is punishable with death or life imprisonment and fine; enhanced minimum in certain group‑based murders.",
+    "ground_truth_answer": "Whoever commits murder is punishable with death or life imprisonment and fine; enhanced minimum in certain group‑based murders.",
+    "language": "en",
+    "source": "seed_notes"
+  },
+  {
+    "id": "eval_002",
+    "query": "What is the name of the appellant and the respondents in the case?",
+    "ground_truth_context": "The appellant is Sarabjeet Singh Mokha, and the respondents are The District Magistrate, Jabalpur & Ors.",
+    "ground_truth_answer": "The appellant is Sarabjeet Singh Mokha, and the respondents are The District Magistrate, Jabalpur & Ors.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_003",
+    "query": "What was the final outcome of the Supreme Court of Law's judgement in this case?",
+    "ground_truth_context": "The Supreme Court set aside the High Court's judgement, allowed the appeals, and ordered the absorption of the appellants in the post of District Minority Welfare Officer from the date of their original appointment. The Court also provided specific directions regarding the retiral benefits of the retired appellants.",
+    "ground_truth_answer": "The Supreme Court set aside the High Court's judgement, allowed the appeals, and ordered the absorption of the appellants in the post of District Minority Welfare Officer from the date of their original appointment. The Court also provided specific directions regarding the retiral benefits of the retired appellants.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_004",
+    "query": "What was the outcome of the trial court's decision?",
+    "ground_truth_context": "The trial court convicted Mahesh Kumar and the other respondents under Sections 302 and 201 read with Section 34 IPC and sentenced them to life imprisonment.",
+    "ground_truth_answer": "The trial court convicted Mahesh Kumar and the other respondents under Sections 302 and 201 read with Section 34 IPC and sentenced them to life imprisonment.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_005",
+    "query": "What was the High Court's condition for setting aside the ex-parte decree?",
+    "ground_truth_context": "The High Court conditioned the setting aside of the ex-parte decree on the respondents paying Rs. 2,50,000 to the petitioners to cover the amount spent on purchasing stamp papers and other expenses.",
+    "ground_truth_answer": "The High Court conditioned the setting aside of the ex-parte decree on the respondents paying Rs. 2,50,000 to the petitioners to cover the amount spent on purchasing stamp papers and other expenses.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_006",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What is maintenance in family law?\nA: Maintenance is financial support provided by one spouse to another or by parents to children. Types: 1) Interim maintenance (during proceedings), 2) Permanent maintenance (after divorce), 3) Child maintenance. Factors considered: income, standard of living, age, health, and conduct of parties.",
+    "ground_truth_answer": "Q: What is maintenance in family law?\nA: Maintenance is financial support provided by one spouse to another or by parents to children. Types: 1) Interim maintenance (during proceedings), 2) Permanent maintenance (after divorce), 3) Child maintenance. Factors considered: income, standard of living, age, health, and conduct of parties.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_007",
+    "query": "How did the Supreme Court address the issue of the respondent-father's allegations about the petitioner's mental health?",
+    "ground_truth_context": "The Supreme Court found the respondent-father's allegations about the petitioner's mental health to be unsubstantiated and noted that the petitioner had successfully managed her children's welfare and education in the USA.",
+    "ground_truth_answer": "The Supreme Court found the respondent-father's allegations about the petitioner's mental health to be unsubstantiated and noted that the petitioner had successfully managed her children's welfare and education in the USA.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_008",
+    "query": "On what grounds did the Directorate of Enforcement freeze the appellant's bank accounts?",
+    "ground_truth_context": "The Directorate of Enforcement froze the appellant's bank accounts to prevent the layering and diversion of proceeds of crime related to a predicate offense investigated by the Central Bureau of Investigation (CBI).",
+    "ground_truth_answer": "The Directorate of Enforcement froze the appellant's bank accounts to prevent the layering and diversion of proceeds of crime related to a predicate offense investigated by the Central Bureau of Investigation (CBI).",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_009",
+    "query": "What action did the Competent Authority of the Central Government take based on the MCI's recommendation?",
+    "ground_truth_context": "The Competent Authority debarred Subharti Medical College from admitting students for two academic years (2017-18 and 2018-19) and authorized the MCI to encash the bank guarantee of Rs. 2 crore.",
+    "ground_truth_answer": "The Competent Authority debarred Subharti Medical College from admitting students for two academic years (2017-18 and 2018-19) and authorized the MCI to encash the bank guarantee of Rs. 2 crore.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_010",
+    "query": "What were the allegations against the Returning Officer, Ashok Mensinkai, in this case?",
+    "ground_truth_context": "The allegations against Ashok Mensinkai were that he gave false evidence before the court during the election petition proceedings, which led to the direction for his prosecution under Section 193 of the Indian Penal Code, 1860.",
+    "ground_truth_answer": "The allegations against Ashok Mensinkai were that he gave false evidence before the court during the election petition proceedings, which led to the direction for his prosecution under Section 193 of the Indian Penal Code, 1860.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_011",
+    "query": "What is the procedure for filing an FIR?",
+    "ground_truth_context": "Driving in a manner dangerous to the public is punishable; 2019 amendments enhanced fines and imprisonment thresholds. State compounding may apply. | MVA s.184 sets the offence of dangerous driving; penalties increased by the 2019 Amendment Act; state compounding schedules vary. | driving manner dangerous; nature, condition and use of the place; traffic amount expected | Enhanced fines and imprisonment as amended in 2019; verify current state notifications for compounding amounts.",
+    "ground_truth_answer": "Driving in a manner dangerous to the public is punishable; 2019 amendments enhanced fines and imprisonment thresholds. State compounding may apply. | MVA s.184 sets the offence of dangerous driving; penalties increased by the 2019 Amendment Act; state compounding schedules vary. | driving manner dangerous; nature, condition and use of the place; traffic amount expected | Enhanced fines and imprisonment as amended in 2019; verify current state notifications for compounding amounts.",
+    "language": "en",
+    "source": "kb_seed"
+  },
+  {
+    "id": "eval_012",
+    "query": "What does the legal_knowledge_sources.txt say about text?",
+    "ground_truth_context": "PRO BONO SERVICES\n-----------------\n• Bar Council initiatives\n• Law firm pro bono programs\n• NGO legal assistance\n• Student legal aid clinics",
+    "ground_truth_answer": "PRO BONO SERVICES\n-----------------\n• Bar Council initiatives\n• Law firm pro bono programs\n• NGO legal assistance\n• Student legal aid clinics",
+    "language": "en",
+    "source": "legal_knowledge_sources.txt"
+  },
+  {
+    "id": "eval_013",
+    "query": "What does the legal_knowledge_sources.txt say about text?",
+    "ground_truth_context": "3. FREE LEGAL DATASETS (FOR AI TRAINING / NLP MODELS)\n====================================================",
+    "ground_truth_answer": "3. FREE LEGAL DATASETS (FOR AI TRAINING / NLP MODELS)\n====================================================",
+    "language": "en",
+    "source": "legal_knowledge_sources.txt"
+  },
+  {
+    "id": "eval_014",
+    "query": "What does the database:laws say about database?",
+    "ground_truth_context": "Enhanced fines and imprisonment as amended in 2019; verify current state notifications for compounding amounts.",
+    "ground_truth_answer": "Enhanced fines and imprisonment as amended in 2019; verify current state notifications for compounding amounts.",
+    "language": "en",
+    "source": "database:laws"
+  },
+  {
+    "id": "eval_015",
+    "query": "What did the trial Court of Law decide in the case of Union of India vs. Leen Martin & Anr.?",
+    "ground_truth_context": "The trial court convicted Leen Martin, sentencing him to 10 years of rigorous imprisonment and a fine of Rs. 1,00,000 for each charge, to be served concurrently.",
+    "ground_truth_answer": "The trial court convicted Leen Martin, sentencing him to 10 years of rigorous imprisonment and a fine of Rs. 1,00,000 for each charge, to be served concurrently.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_016",
+    "query": "What was the prosecution's argument regarding the High Court's decision in State of Kerala vs. Rajesh?",
+    "ground_truth_context": "The prosecution argued that the High Court committed an error by granting post-arrest bail without considering the mandate of Section 37(1)(b)(ii) of the NDPS Act, which specifies that bail can only be granted if there are reasonable grounds for believing that the accused is not guilty and is not likely to commit any offense while on bail.",
+    "ground_truth_answer": "The prosecution argued that the High Court committed an error by granting post-arrest bail without considering the mandate of Section 37(1)(b)(ii) of the NDPS Act, which specifies that bail can only be granted if there are reasonable grounds for believing that the accused is not guilty and is not likely to commit any offense while on bail.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_017",
+    "query": "What clarification did the Supreme Court provide regarding the term 'College' in the CAS statute?",
+    "ground_truth_context": "The Supreme Court clarified that the term 'College' in the CAS statute refers only to Constituent Colleges of the University and not affiliated colleges.",
+    "ground_truth_answer": "The Supreme Court clarified that the term 'College' in the CAS statute refers only to Constituent Colleges of the University and not affiliated colleges.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_018",
+    "query": "What did the Supreme Court direct regarding the pending applications related to the case?",
+    "ground_truth_context": "The Supreme Court dismissed all pending applications, including the applications for intervention and impleadment, stating that they were without merit.",
+    "ground_truth_answer": "The Supreme Court dismissed all pending applications, including the applications for intervention and impleadment, stating that they were without merit.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_019",
+    "query": "How did the Supreme Court address the possibility of abuse of 'Living Wills'?",
+    "ground_truth_context": "The Supreme Court acknowledged the potential for abuse by beneficiaries and the fears of collusion among treating physicians. It highlighted the need for stringent guidelines and oversight to prevent misuse while ensuring the patient's rights.",
+    "ground_truth_answer": "The Supreme Court acknowledged the potential for abuse by beneficiaries and the fears of collusion among treating physicians. It highlighted the need for stringent guidelines and oversight to prevent misuse while ensuring the patient's rights.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_020",
+    "query": "What was the High Court's decision regarding the charges proved by the Enquiry Officer?",
+    "ground_truth_context": "The High Court set aside the punishment order, including the recovery of Rs. 2,46,922.56, due to the Disciplinary Authority's failure to issue a notice regarding their disagreement with the Enquiry Officer's findings on other charges.",
+    "ground_truth_answer": "The High Court set aside the punishment order, including the recovery of Rs. 2,46,922.56, due to the Disciplinary Authority's failure to issue a notice regarding their disagreement with the Enquiry Officer's findings on other charges.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_021",
+    "query": "What does the legal_knowledge_sources.txt say about text?",
+    "ground_truth_context": "CONSUMER PROTECTION\n-------------------\n• Consumer Protection Act - Rights and remedies\n• Product Liability - Manufacturer responsibility\n• Service Standards - Quality and compensation",
+    "ground_truth_answer": "CONSUMER PROTECTION\n-------------------\n• Consumer Protection Act - Rights and remedies\n• Product Liability - Manufacturer responsibility\n• Service Standards - Quality and compensation",
+    "language": "en",
+    "source": "legal_knowledge_sources.txt"
+  },
+  {
+    "id": "eval_022",
+    "query": "What was the Supreme Court's view on the application of Section 319 of the Code of Criminal Procedure in this case?",
+    "ground_truth_context": "The Supreme Court emphasized that Section 319 CrPC is a discretionary and extraordinary power to be exercised sparingly. The Court found that the High Court did not properly consider the principles laid down for invoking Section 319 and set aside the High Court's order.",
+    "ground_truth_answer": "The Supreme Court emphasized that Section 319 CrPC is a discretionary and extraordinary power to be exercised sparingly. The Court found that the High Court did not properly consider the principles laid down for invoking Section 319 and set aside the High Court's order.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_023",
+    "query": "What did the Securities Appellate Tribunal (SAT) decide regarding the company's fee exemption claim?",
+    "ground_truth_context": "The SAT affirmed SEBI's decision, stating that the company failed to meet the conditions under Para 4 of Schedule III of the Regulations, and thus was not entitled to the fee exemption.",
+    "ground_truth_answer": "The SAT affirmed SEBI's decision, stating that the company failed to meet the conditions under Para 4 of Schedule III of the Regulations, and thus was not entitled to the fee exemption.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_024",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What is cyber defamation under IT Act?\nA: Cyber defamation involves publishing defamatory content online. Under Section 66A of IT Act (now struck down), sending offensive messages was punishable. Currently, cyber defamation is covered under IPC Section 499 (defamation) and Section 500 (punishment for defamation) - imprisonment up to 2 years or fine or both.",
+    "ground_truth_answer": "Q: What is cyber defamation under IT Act?\nA: Cyber defamation involves publishing defamatory content online. Under Section 66A of IT Act (now struck down), sending offensive messages was punishable. Currently, cyber defamation is covered under IPC Section 499 (defamation) and Section 500 (punishment for defamation) - imprisonment up to 2 years or fine or both.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_025",
+    "query": "What was the Supreme Court's stance on the implementation of the 2018 MoRTH Circular for the Chardham project in the 14th December 2021 judgment?",
+    "ground_truth_context": "The Supreme Court upheld the implementation of the 2018 MoRTH Circular, requiring adherence to Intermediate Lane Width standards for environmentally sensitive areas.",
+    "ground_truth_answer": "The Supreme Court upheld the implementation of the 2018 MoRTH Circular, requiring adherence to Intermediate Lane Width standards for environmentally sensitive areas.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_026",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What is breach of contract?\nA: Breach of contract occurs when one party fails to perform their obligations under the contract. Remedies include: 1) Damages (compensation for loss), 2) Specific performance (court orders performance), 3) Injunction (restrains breach), 4) Rescission (cancellation of contract), 5) Quantum meruit (payment for work done).",
+    "ground_truth_answer": "Q: What is breach of contract?\nA: Breach of contract occurs when one party fails to perform their obligations under the contract. Remedies include: 1) Damages (compensation for loss), 2) Specific performance (court orders performance), 3) Injunction (restrains breach), 4) Rescission (cancellation of contract), 5) Quantum meruit (payment for work done).",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_027",
+    "query": "What was the rationale of the Supreme Court in setting aside the High Court's order dated 4th July 2019?",
+    "ground_truth_context": "The Supreme Court found that the High Court overstepped its supervisory jurisdiction under Article 227 by reappreciating and substituting its own findings for those of the trial court, which had justifiably granted relief based on the appellant's incarceration and inability to participate in the trial.",
+    "ground_truth_answer": "The Supreme Court found that the High Court overstepped its supervisory jurisdiction under Article 227 by reappreciating and substituting its own findings for those of the trial court, which had justifiably granted relief based on the appellant's incarceration and inability to participate in the trial.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_028",
+    "query": "What was the primary issue in the case of Jayesh H. Pandya & Anr. vs. Subhtex India Ltd. & Ors.?",
+    "ground_truth_context": "The primary issue was whether the appellants had waived their right to the extension of time for the completion of arbitration proceedings and making the award beyond the stipulated period of four months.",
+    "ground_truth_answer": "The primary issue was whether the appellants had waived their right to the extension of time for the completion of arbitration proceedings and making the award beyond the stipulated period of four months.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_029",
+    "query": "What was the High Court's reason for quashing the complaints filed by Dr. Lakshman?",
+    "ground_truth_context": "The High Court quashed the complaints on the grounds that there was a novation of contract, the appellant had already filed a civil suit for recovery of the advance, and the complaints were related to civil disputes rather than criminal offenses.",
+    "ground_truth_answer": "The High Court quashed the complaints on the grounds that there was a novation of contract, the appellant had already filed a civil suit for recovery of the advance, and the complaints were related to civil disputes rather than criminal offenses.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_030",
+    "query": "What constitutes criminal breach of trust?",
+    "ground_truth_context": "Whoever commits murder is punishable with death or life imprisonment and fine; enhanced minimum in certain group‑based murders. | Punishment provision for murder including aggravated scenarios where a group of five or more commits murder on specified discriminatory grounds. | commission of offence under s.101 | Death or life imprisonment and fine; in specified group‑based murders, not less than 7 years up to life or death and fine.",
+    "ground_truth_answer": "Whoever commits murder is punishable with death or life imprisonment and fine; enhanced minimum in certain group‑based murders. | Punishment provision for murder including aggravated scenarios where a group of five or more commits murder on specified discriminatory grounds. | commission of offence under s.101 | Death or life imprisonment and fine; in specified group‑based murders, not less than 7 years up to life or death and fine.",
+    "language": "en",
+    "source": "kb_seed"
+  },
+  {
+    "id": "eval_031",
+    "query": "What was the Supreme Court's decision regarding the appeal in Criminal Appeal No. 1384 of 2013?",
+    "ground_truth_context": "The appeal in Criminal Appeal No. 1384 of 2013 was dismissed as infructuous on the statement of learned counsel for the appellant.",
+    "ground_truth_answer": "The appeal in Criminal Appeal No. 1384 of 2013 was dismissed as infructuous on the statement of learned counsel for the appellant.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_032",
+    "query": "What legal provision did the Supreme Court refer to for granting probation?",
+    "ground_truth_context": "The Supreme Court referred to Section 4 of the Probation of Offenders Act, 1958, which allows the court to release an offender on probation of good conduct instead of sentencing them immediately.",
+    "ground_truth_answer": "The Supreme Court referred to Section 4 of the Probation of Offenders Act, 1958, which allows the court to release an offender on probation of good conduct instead of sentencing them immediately.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_033",
+    "query": "What broader legal principle did the Supreme Court highlight regarding omnibus relief in bail applications?",
+    "ground_truth_context": "The Supreme Court emphasized that one bail order cannot apply to all subsequent cases, especially when different investigating agencies and complaints are involved. Each bail application should be considered by the respective jurisdictional courts based on the specifics of each case.",
+    "ground_truth_answer": "The Supreme Court emphasized that one bail order cannot apply to all subsequent cases, especially when different investigating agencies and complaints are involved. Each bail application should be considered by the respective jurisdictional courts based on the specifics of each case.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_034",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What are consumer rights under Consumer Protection Act?\nA: Consumer rights include: 1) Right to safety (protection from hazardous goods), 2) Right to information (about product quality, quantity, price), 3) Right to choose (access to variety of goods), 4) Right to be heard (representation in consumer forums), 5) Right to seek redressal (compensation for unfair practices), 6) Right to consumer education.",
+    "ground_truth_answer": "Q: What are consumer rights under Consumer Protection Act?\nA: Consumer rights include: 1) Right to safety (protection from hazardous goods), 2) Right to information (about product quality, quantity, price), 3) Right to choose (access to variety of goods), 4) Right to be heard (representation in consumer forums), 5) Right to seek redressal (compensation for unfair practices), 6) Right to consumer education.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_035",
+    "query": "What argument did the counsel for the appellants present in support of their claim?",
+    "ground_truth_context": "The counsel for the appellants argued that the issue was covered by the Supreme Court's decision in Union of India v. V.R. Tripathi, which held that a child of a second wife of an employee could not be denied compassionate appointment on that ground alone.",
+    "ground_truth_answer": "The counsel for the appellants argued that the issue was covered by the Supreme Court's decision in Union of India v. V.R. Tripathi, which held that a child of a second wife of an employee could not be denied compassionate appointment on that ground alone.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_036",
+    "query": "What was the primary legal issue in the case of Central Bureau of Investigation vs P.S. Jayaprakash & Ors.?",
+    "ground_truth_context": "The primary legal issue was whether the High Court was justified in granting anticipatory bail to the respondents, who were accused of multiple offences, including conspiracy, under the IPC.",
+    "ground_truth_answer": "The primary legal issue was whether the High Court was justified in granting anticipatory bail to the respondents, who were accused of multiple offences, including conspiracy, under the IPC.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_037",
+    "query": "What evidence did the prosecution rely on to prove the charges against M. Ramalingam?",
+    "ground_truth_context": "The prosecution relied on the jewel loan movement register and the testimony of bank officials to establish that loans were sanctioned without actual jewels being pledged.",
+    "ground_truth_answer": "The prosecution relied on the jewel loan movement register and the testimony of bank officials to establish that loans were sanctioned without actual jewels being pledged.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_038",
+    "query": "Why did DBS Bank India Limited file a Criminal Miscellaneous Case before the Delhi High Court of Law?",
+    "ground_truth_context": "DBS Bank India Limited filed a Criminal Miscellaneous Case seeking to quash the supplementary chargesheet and the summoning order, arguing that Laxmi Vilas Bank (LVB) had ceased to exist due to the amalgamation, and DBS should not face prosecution for the acts of LVB.",
+    "ground_truth_answer": "DBS Bank India Limited filed a Criminal Miscellaneous Case seeking to quash the supplementary chargesheet and the summoning order, arguing that Laxmi Vilas Bank (LVB) had ceased to exist due to the amalgamation, and DBS should not face prosecution for the acts of LVB.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_039",
+    "query": "What was the significance of the appellants joining the investigation in this case?",
+    "ground_truth_context": "The significance of the appellants joining the investigation was that it demonstrated their willingness to cooperate, which was a key factor in the Supreme Court's decision to grant anticipatory bail.",
+    "ground_truth_answer": "The significance of the appellants joining the investigation was that it demonstrated their willingness to cooperate, which was a key factor in the Supreme Court's decision to grant anticipatory bail.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_040",
+    "query": "What is the legal position regarding section 175 — police officer’s power to investigate cognizable case; magistrate‑directed investigation?",
+    "ground_truth_context": "Officer in charge may investigate any cognizable case without Magistrate’s order; SP/DySP oversight possible. Magistrate may order investigation on complaint in specified scenarios.",
+    "ground_truth_answer": "Officer in charge may investigate any cognizable case without Magistrate’s order; SP/DySP oversight possible. Magistrate may order investigation on complaint in specified scenarios.",
+    "language": "en",
+    "source": "seed_notes"
+  },
+  {
+    "id": "eval_041",
+    "query": "What procedural error did the High Court of Law commit according to the Supreme Court of Law in the case Akhilesh Singh @ Akhileshwar Singh vs. Lal Babu Singh & Ors.?",
+    "ground_truth_context": "The procedural error committed by the High Court was that it admitted additional evidence and proceeded to decide the appeal without giving the appellant an opportunity to rebut the additional evidence or explain the alleged admissions, thereby violating the principles of natural justice.",
+    "ground_truth_answer": "The procedural error committed by the High Court was that it admitted additional evidence and proceeded to decide the appeal without giving the appellant an opportunity to rebut the additional evidence or explain the alleged admissions, thereby violating the principles of natural justice.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_042",
+    "query": "What is the difference between culpable homicide and murder?",
+    "ground_truth_context": "Defines murder as culpable homicide with specific intent/knowledge thresholds; recognizes exceptions where culpable homicide is not murder. | BNS s.101 defines when culpable homicide amounts to murder based on intention/knowledge, subject to specified exceptions. | act causing death; intention to cause death OR intention to cause such bodily injury as is likely to cause death OR knowledge that act is so imminently dangerous that it must in all probability cause death | grave and sudden provocation (limited); private defence exceeding power without premeditation; consent in certain cases (limited); act of public servant without ill‑will (limited)",
+    "ground_truth_answer": "Defines murder as culpable homicide with specific intent/knowledge thresholds; recognizes exceptions where culpable homicide is not murder. | BNS s.101 defines when culpable homicide amounts to murder based on intention/knowledge, subject to specified exceptions. | act causing death; intention to cause death OR intention to cause such bodily injury as is likely to cause death OR knowledge that act is so imminently dangerous that it must in all probability cause death | grave and sudden provocati",
+    "language": "en",
+    "source": "kb_seed"
+  },
+  {
+    "id": "eval_043",
+    "query": "What was the main issue in the case of Ranjan Sinha & Anr vs Ajay Kumar Vishwakarma & Ors?",
+    "ground_truth_context": "The main issue in this case was the applicability of laws framed by the erstwhile State of Bihar to the newly bifurcated State of Jharkhand, specifically concerning the preparation of the First Register of pharmacists under the Pharmacy Act, 1948, after the bifurcation.",
+    "ground_truth_answer": "The main issue in this case was the applicability of laws framed by the erstwhile State of Bihar to the newly bifurcated State of Jharkhand, specifically concerning the preparation of the First Register of pharmacists under the Pharmacy Act, 1948, after the bifurcation.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_044",
+    "query": "What is the main issue in the case of The Life Insurance Corporation of India vs. Sri Kalappa M. Sankad (D) Thr. Lrs. & Ors.?",
+    "ground_truth_context": "The main issue is the challenge to the termination of Mr. Kalappa M. Sankad's services by the Life Insurance Corporation (LIC) and the subsequent legal battle involving his reinstatement and payment of back wages after his death.",
+    "ground_truth_answer": "The main issue is the challenge to the termination of Mr. Kalappa M. Sankad's services by the Life Insurance Corporation (LIC) and the subsequent legal battle involving his reinstatement and payment of back wages after his death.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_045",
+    "query": "What should companies consider when disputing electricity tariffs and related costs in light of this judgment?",
+    "ground_truth_context": "Companies should ensure they comply with court directives promptly and avoid unnecessary litigation delays, focusing on accurate and transparent calculations in their tariff and cost disputes.",
+    "ground_truth_answer": "Companies should ensure they comply with court directives promptly and avoid unnecessary litigation delays, focusing on accurate and transparent calculations in their tariff and cost disputes.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_046",
+    "query": "How did the Supreme Court rule on the appeal filed by Dr. S.K. Jhunjhunwala?",
+    "ground_truth_context": "The Supreme Court allowed the appeal, set aside the order of the National Commission, and restored the order of the State Commission, which had dismissed the complaint against Dr. S.K. Jhunjhunwala, finding no merit in the allegations of negligence.",
+    "ground_truth_answer": "The Supreme Court allowed the appeal, set aside the order of the National Commission, and restored the order of the State Commission, which had dismissed the complaint against Dr. S.K. Jhunjhunwala, finding no merit in the allegations of negligence.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_047",
+    "query": "What was the High Court's decision regarding the applications under Order 6 Rule 17 and Order 1 Rule 10 of the Code of Civil Procedure?",
+    "ground_truth_context": "The High Court allowed the applications, permitting the original plaintiffs to amend their plaints to declare the mortgages/charges on the entire premises as void ab initio and to implead the mortgagee banks/financial institutions.",
+    "ground_truth_answer": "The High Court allowed the applications, permitting the original plaintiffs to amend their plaints to declare the mortgages/charges on the entire premises as void ab initio and to implead the mortgagee banks/financial institutions.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_048",
+    "query": "What was the outcome of the second round of litigation initiated by Jogi Ram challenging the sale deeds executed by Ram Devi?",
+    "ground_truth_context": "The trial court decreed in favor of Jogi Ram, holding that the sale deeds executed by Ram Devi were unsustainable as they violated the limited ownership rights conferred to her and reaffirmed Jogi Ram's absolute ownership after her lifetime.",
+    "ground_truth_answer": "The trial court decreed in favor of Jogi Ram, holding that the sale deeds executed by Ram Devi were unsustainable as they violated the limited ownership rights conferred to her and reaffirmed Jogi Ram's absolute ownership after her lifetime.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_049",
+    "query": "What was the main issue in the case of 'Shri Subir Bose vs. Inspector of Factories, represented by S. M. Paranjpe & Anr.'?",
+    "ground_truth_context": "The main issue was whether Shri Subir Bose, as the Managing Director of Berger Paints India Ltd., was liable under Section 92 of the Factories Act for operating a factory without a proper license and for not taking adequate safety measures to prevent fire hazards.",
+    "ground_truth_answer": "The main issue was whether Shri Subir Bose, as the Managing Director of Berger Paints India Ltd., was liable under Section 92 of the Factories Act for operating a factory without a proper license and for not taking adequate safety measures to prevent fire hazards.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_050",
+    "query": "What was the Supreme Court's direction regarding the ongoing inquiries by the official respondents?",
+    "ground_truth_context": "The Supreme Court directed that the ongoing inquiries by the official respondents (Nos.7 to 11) should continue, and appropriate action should be taken based on the outcome of these inquiries.",
+    "ground_truth_answer": "The Supreme Court directed that the ongoing inquiries by the official respondents (Nos.7 to 11) should continue, and appropriate action should be taken based on the outcome of these inquiries.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_051",
+    "query": "How did the Supreme Court interpret the statutory timelines set by AICTE for issuing approvals?",
+    "ground_truth_context": "The Supreme Court held that the statutory timelines set by AICTE are mandatory and not directory, and any approval granted beyond the cutoff date of 30th April for the academic year 2017-18 would be invalid.",
+    "ground_truth_answer": "The Supreme Court held that the statutory timelines set by AICTE are mandatory and not directory, and any approval granted beyond the cutoff date of 30th April for the academic year 2017-18 would be invalid.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_052",
+    "query": "What did the trial court conclude regarding the age of the prosecutrix and the consent?",
+    "ground_truth_context": "The trial court concluded that the prosecutrix was a minor, aged 16 years, 3 months, and 6 days at the time of the incident, and her consent was irrelevant for the charges of kidnapping.",
+    "ground_truth_answer": "The trial court concluded that the prosecutrix was a minor, aged 16 years, 3 months, and 6 days at the time of the incident, and her consent was irrelevant for the charges of kidnapping.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_053",
+    "query": "What was the Union of India's argument regarding the service tax liability?",
+    "ground_truth_context": "The Union of India argued that under the Finance Act, 1994, and the Service Tax Rules, 1994, the service tax was primarily leviable on the service provider, i.e., the lessor, and therefore the lessor should bear the service tax.",
+    "ground_truth_answer": "The Union of India argued that under the Finance Act, 1994, and the Service Tax Rules, 1994, the service tax was primarily leviable on the service provider, i.e., the lessor, and therefore the lessor should bear the service tax.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_054",
+    "query": "What was the decision of the Committee constituted under Article 226(2) and 226(3) of the Jammu and Kashmir Civil Services Regulations regarding Farid Ahmad Tak?",
+    "ground_truth_context": "The Committee recommended the compulsory retirement of Farid Ahmad Tak, stating that he had indulged in corrupt practices, caused loss to the State exchequer, and had outlived his utility to the public. The Committee's report highlighted his bad reputation and embezzlement of government money.",
+    "ground_truth_answer": "The Committee recommended the compulsory retirement of Farid Ahmad Tak, stating that he had indulged in corrupt practices, caused loss to the State exchequer, and had outlived his utility to the public. The Committee's report highlighted his bad reputation and embezzlement of government money.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_055",
+    "query": "What is the burden of proof in criminal cases?",
+    "ground_truth_context": "Electronic/digital records may be primary evidence; admissible if Section 63 conditions satisfied. Certificate requirements updated for electronic outputs. | BSA recognises electronic/digital records as evidence. Section 63 sets conditions for admissibility of computer outputs and electronic records. | electronic record; computer output; conditions for admissibility | primary electronic original may not require certificate similar to IEA 65B jurisprudence; verify per BSA text",
+    "ground_truth_answer": "Electronic/digital records may be primary evidence; admissible if Section 63 conditions satisfied. Certificate requirements updated for electronic outputs. | BSA recognises electronic/digital records as evidence. Section 63 sets conditions for admissibility of computer outputs and electronic records. | electronic record; computer output; conditions for admissibility | primary electronic original may not require certificate similar to IEA 65B jurisprudence; verify per BSA text",
+    "language": "en",
+    "source": "kb_seed"
+  },
+  {
+    "id": "eval_056",
+    "query": "What was the primary legal issue in the case Food Corporation of India & Ors. vs. Abhijit Paul?",
+    "ground_truth_context": "The primary legal issue was whether the demurrages imposed on the Food Corporation of India (FCI) by the Railways can be recovered by the FCI from the contractors as 'charges' recoverable under clause XII (a) of the contract.",
+    "ground_truth_answer": "The primary legal issue was whether the demurrages imposed on the Food Corporation of India (FCI) by the Railways can be recovered by the FCI from the contractors as 'charges' recoverable under clause XII (a) of the contract.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_057",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What is the income tax filing process?\nA: Income tax filing: 1) Calculate total income, 2) Determine applicable tax slab, 3) Calculate tax liability, 4) File return online at incometax.gov.in, 5) Pay any outstanding tax, 6) Verify return (Aadhaar OTP or digital signature). Due date: July 31 for individuals, September 30 for businesses.",
+    "ground_truth_answer": "Q: What is the income tax filing process?\nA: Income tax filing: 1) Calculate total income, 2) Determine applicable tax slab, 3) Calculate tax liability, 4) File return online at incometax.gov.in, 5) Pay any outstanding tax, 6) Verify return (Aadhaar OTP or digital signature). Due date: July 31 for individuals, September 30 for businesses.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_058",
+    "query": "Why were the respondents initially employed by the North Delhi Municipal Corporation?",
+    "ground_truth_context": "The respondents were initially employed to counter the outbreak of dengue and have been working since 1997-1998 on a contractual basis.",
+    "ground_truth_answer": "The respondents were initially employed to counter the outbreak of dengue and have been working since 1997-1998 on a contractual basis.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_059",
+    "query": "What was the outcome of the Supreme Court's judgment in this case?",
+    "ground_truth_context": "The Supreme Court dismissed the CBI's appeal and upheld the High Court's decision to discharge Uttamchand Bohra, citing lack of sufficient evidence.",
+    "ground_truth_answer": "The Supreme Court dismissed the CBI's appeal and upheld the High Court's decision to discharge Uttamchand Bohra, citing lack of sufficient evidence.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_060",
+    "query": "How did the Supreme Court view the policy decision regarding 'in-service' quota reservations?",
+    "ground_truth_context": "The Supreme Court noted that the decision to provide 'in-service' quota reservations lies within the policy domain of the respondent-authority (ESIC) and cannot be mandated by the Court. The policy decision to exclude junior resident doctors from the 'in-service' quota was deemed justified.",
+    "ground_truth_answer": "The Supreme Court noted that the decision to provide 'in-service' quota reservations lies within the policy domain of the respondent-authority (ESIC) and cannot be mandated by the Court. The policy decision to exclude junior resident doctors from the 'in-service' quota was deemed justified.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_061",
+    "query": "What was the main legal issue in 'The State of Haryana & Ors. vs. Raj Kumar @ Bittu'?",
+    "ground_truth_context": "The main legal issue was whether the policies of the State Government regarding remission of sentences for life convicts should apply retroactively and the feasibility of drafting a new policy without leading to discrimination among similarly situated prisoners.",
+    "ground_truth_answer": "The main legal issue was whether the policies of the State Government regarding remission of sentences for life convicts should apply retroactively and the feasibility of drafting a new policy without leading to discrimination among similarly situated prisoners.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_062",
+    "query": "On what grounds did the Supreme Court dismiss the appeal filed by Chandrika's legal representatives?",
+    "ground_truth_context": "The Supreme Court dismissed the appeal on the grounds that the findings of the Revenue Authorities and the High Court were based on proper appreciation of evidence, consistent with the revenue entries, and supported by reasons.",
+    "ground_truth_answer": "The Supreme Court dismissed the appeal on the grounds that the findings of the Revenue Authorities and the High Court were based on proper appreciation of evidence, consistent with the revenue entries, and supported by reasons.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_063",
+    "query": "Why did the insurance company refuse to pay the claim initially?",
+    "ground_truth_context": "The insurance company refused to pay the claim on the grounds that the premium was credited to their account on 09.03.2007, after the insured's death on 17.02.2007, and therefore, the policy was considered effective only from 09.03.2007.",
+    "ground_truth_answer": "The insurance company refused to pay the claim on the grounds that the premium was credited to their account on 09.03.2007, after the insured's death on 17.02.2007, and therefore, the policy was considered effective only from 09.03.2007.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_064",
+    "query": "What was the age of the victim in this case?",
+    "ground_truth_context": "The victim was a seven-year-old girl.",
+    "ground_truth_answer": "The victim was a seven-year-old girl.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_065",
+    "query": "What is the legal position regarding section 101 — murder (definition)?",
+    "ground_truth_context": "Defines murder as culpable homicide with specific intent/knowledge thresholds; recognizes exceptions where culpable homicide is not murder.",
+    "ground_truth_answer": "Defines murder as culpable homicide with specific intent/knowledge thresholds; recognizes exceptions where culpable homicide is not murder.",
+    "language": "en",
+    "source": "seed_notes"
+  },
+  {
+    "id": "eval_066",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What is copyright protection?\nA: Copyright protects original literary, dramatic, musical, and artistic works. Rights include: 1) Reproduction rights, 2) Distribution rights, 3) Public performance rights, 4) Adaptation rights. Duration: 60 years from author's death. Registration is not mandatory but provides evidence of ownership.",
+    "ground_truth_answer": "Q: What is copyright protection?\nA: Copyright protects original literary, dramatic, musical, and artistic works. Rights include: 1) Reproduction rights, 2) Distribution rights, 3) Public performance rights, 4) Adaptation rights. Duration: 60 years from author's death. Registration is not mandatory but provides evidence of ownership.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_067",
+    "query": "What legal principle did the Supreme Court highlight in relation to claim petitions in Mathew Alexander vs. Mohammed Shafi and Anr.?",
+    "ground_truth_context": "The Supreme Court highlighted that the standard of proof in claim petitions is based on the preponderance of probabilities, not beyond a reasonable doubt. This principle guides the determination of negligence in claim petitions for compensation.",
+    "ground_truth_answer": "The Supreme Court highlighted that the standard of proof in claim petitions is based on the preponderance of probabilities, not beyond a reasonable doubt. This principle guides the determination of negligence in claim petitions for compensation.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_068",
+    "query": "Did the Supreme Court find any organized crime activity within Delhi in this case?",
+    "ground_truth_context": "No, the Supreme Court found that there was no organized crime activity committed within Delhi by the respondents, which is a sine qua non for prosecution under MCOCA.",
+    "ground_truth_answer": "No, the Supreme Court found that there was no organized crime activity committed within Delhi by the respondents, which is a sine qua non for prosecution under MCOCA.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_069",
+    "query": "What conditions were imposed on the appellants upon their release on probation?",
+    "ground_truth_context": "The appellants were required to enter into a bond with two sureties each, ensuring that they maintain peace and good behavior for the remaining part of their sentence, failing which they could be called upon to serve the remaining sentence.",
+    "ground_truth_answer": "The appellants were required to enter into a bond with two sureties each, ensuring that they maintain peace and good behavior for the remaining part of their sentence, failing which they could be called upon to serve the remaining sentence.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_070",
+    "query": "What was the Supreme Court's main reasoning for allowing the appeals and acquitting the appellants?",
+    "ground_truth_context": "The Supreme Court found that the prosecution had failed to prove the guilt beyond reasonable doubt. It noted inconsistencies and improbabilities in the testimonies of key witnesses (PW-2 and PW-3) and deemed the High Court's approach of reversing the trial court's acquittal on the basis of a 'more probable' version to be erroneous.",
+    "ground_truth_answer": "The Supreme Court found that the prosecution had failed to prove the guilt beyond reasonable doubt. It noted inconsistencies and improbabilities in the testimonies of key witnesses (PW-2 and PW-3) and deemed the High Court's approach of reversing the trial court's acquittal on the basis of a 'more probable' version to be erroneous.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_071",
+    "query": "What did the Supreme Court conclude about the High Court's decision to quash the FIR?",
+    "ground_truth_context": "The Supreme Court concluded that the High Court's decision was based on a wrong assumption, interpretation, and application of the law, and that the FIR should not have been quashed.",
+    "ground_truth_answer": "The Supreme Court concluded that the High Court's decision was based on a wrong assumption, interpretation, and application of the law, and that the FIR should not have been quashed.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_072",
+    "query": "What is the legal position regarding section 173 — information in cognizable cases (fir, incl. zero fir, e‑fir)?",
+    "ground_truth_context": "Every information of a cognizable offence may be given orally or by electronic communication; must be recorded and a free copy given. Provision for preliminary enquiry in certain 3–<7 year offences; Zero FIR allowed irrespective of jurisdiction.",
+    "ground_truth_answer": "Every information of a cognizable offence may be given orally or by electronic communication; must be recorded and a free copy given. Provision for preliminary enquiry in certain 3–<7 year offences; Zero FIR allowed irrespective of jurisdiction.",
+    "language": "en",
+    "source": "seed_notes"
+  },
+  {
+    "id": "eval_073",
+    "query": "What was the High Court's judgment on the matter prior to the Supreme Court's involvement?",
+    "ground_truth_context": "The High Court of Karnataka, in its judgment dated 2nd December 2014, upheld the objections of the Karnataka Co-operative Milk Producers Federation Ltd. and confirmed the order of the IPAB, which had canceled the registration of the 'NANDHINI' mark for M/S. Nandhini Deluxe.",
+    "ground_truth_answer": "The High Court of Karnataka, in its judgment dated 2nd December 2014, upheld the objections of the Karnataka Co-operative Milk Producers Federation Ltd. and confirmed the order of the IPAB, which had canceled the registration of the 'NANDHINI' mark for M/S. Nandhini Deluxe.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_074",
+    "query": "Why did the RBI oppose the withdrawal of the Special Leave Petitions?",
+    "ground_truth_context": "The RBI opposed the withdrawal of the Special Leave Petitions because they argued that arrangements were made behind their back, taking advantage of the status-quo order, and such conduct should disentitle the petitioners from seeking withdrawal.",
+    "ground_truth_answer": "The RBI opposed the withdrawal of the Special Leave Petitions because they argued that arrangements were made behind their back, taking advantage of the status-quo order, and such conduct should disentitle the petitioners from seeking withdrawal.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_075",
+    "query": "What was the Supreme Court's final decision in this case?",
+    "ground_truth_context": "The Supreme Court set aside the judgments and orders of the High Court and remitted the matter back to the Division Bench of the High Court for fresh consideration, directing that the case be dealt with in accordance with the law.",
+    "ground_truth_answer": "The Supreme Court set aside the judgments and orders of the High Court and remitted the matter back to the Division Bench of the High Court for fresh consideration, directing that the case be dealt with in accordance with the law.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_076",
+    "query": "What was the Supreme Court's decision regarding the death sentence?",
+    "ground_truth_context": "The Supreme Court concluded that the case did not fall within the category of 'rarest of rare' cases warranting the death penalty. The Court converted the death sentence to life imprisonment without the possibility of remission.",
+    "ground_truth_answer": "The Supreme Court concluded that the case did not fall within the category of 'rarest of rare' cases warranting the death penalty. The Court converted the death sentence to life imprisonment without the possibility of remission.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_077",
+    "query": "What was the High Court's decision regarding Gurbachan Singh's conviction?",
+    "ground_truth_context": "The High Court acquitted Gurbachan Singh under Section 302 IPC, convicting him only under Section 323 IPC for causing injuries to Teja Singh, reasoning that he did not share the common intention to commit murder.",
+    "ground_truth_answer": "The High Court acquitted Gurbachan Singh under Section 302 IPC, convicting him only under Section 323 IPC for causing injuries to Teja Singh, reasoning that he did not share the common intention to commit murder.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_078",
+    "query": "What were the charges against the accused in the case 'Chhote Lal vs. Rohtash & Ors.'?",
+    "ground_truth_context": "The accused were charged with offences under Sections 148, 201/149, and 302/149 of the Indian Penal Code, with the maximum punishment being life imprisonment and a fine of Rs. 5,000, in default of which they would undergo further imprisonment of six months.",
+    "ground_truth_answer": "The accused were charged with offences under Sections 148, 201/149, and 302/149 of the Indian Penal Code, with the maximum punishment being life imprisonment and a fine of Rs. 5,000, in default of which they would undergo further imprisonment of six months.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_079",
+    "query": "Why did the Supreme Court dismiss the objections raised by the second plaintiff, Vasudevan Pillai, regarding the final decree application in the case Selvi vs. Gopalakrishnan Nair (D) Thr. LRs. and Ors.?",
+    "ground_truth_context": "The Supreme Court dismissed Vasudevan Pillai's objections as an afterthought and upheld that third plaintiff Selvi had the right to pursue the final decree application, stating that Vasudevan Pillai's claims of forgery were not credible.",
+    "ground_truth_answer": "The Supreme Court dismissed Vasudevan Pillai's objections as an afterthought and upheld that third plaintiff Selvi had the right to pursue the final decree application, stating that Vasudevan Pillai's claims of forgery were not credible.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_080",
+    "query": "What was the Supreme Court's reasoning for treating the seven-day period as directory rather than mandatory?",
+    "ground_truth_context": "The Supreme Court reasoned that making the seven-day period mandatory would not serve any practical purpose and could lead to unjust outcomes. The Court highlighted that the intention of the Insolvency and Bankruptcy Code, 2016, is to facilitate timely resolution of insolvency cases. However, rigid adherence to the seven-day period could result in meritorious cases being dismissed on technical grounds. Therefore, the Court held that the period should be treated as directory, allowing adjudicating authorities to accept applications if valid reasons for delays are provided.",
+    "ground_truth_answer": "The Supreme Court reasoned that making the seven-day period mandatory would not serve any practical purpose and could lead to unjust outcomes. The Court highlighted that the intention of the Insolvency and Bankruptcy Code, 2016, is to facilitate timely resolution of insolvency cases. However, rigid adherence to the seven-day period could result in meritorious cases being dismissed on technical grounds. Therefore, the Court held that the period should be treated as directory, allowing adjudicating authorities to accept applications if valid reasons for delays are provided.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_081",
+    "query": "What was the Supreme Court's view on the High Court's alteration of charges?",
+    "ground_truth_context": "The Supreme Court upheld the High Court's alteration of charges, finding no merit in the appeal and agreeing that the case should proceed under Section 304-A IPC.",
+    "ground_truth_answer": "The Supreme Court upheld the High Court's alteration of charges, finding no merit in the appeal and agreeing that the case should proceed under Section 304-A IPC.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_082",
+    "query": "What was the Supreme Court's decision regarding the prayers sought in the miscellaneous application?",
+    "ground_truth_context": "The Supreme Court did not entertain the miscellaneous application, stating that the prayers sought were in the form of a review that requires detailed consideration. The Court relegated the Revenue to file an appropriate review application for the relief sought.",
+    "ground_truth_answer": "The Supreme Court did not entertain the miscellaneous application, stating that the prayers sought were in the form of a review that requires detailed consideration. The Court relegated the Revenue to file an appropriate review application for the relief sought.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_083",
+    "query": "What was Manimaran's defense regarding the signatures on the documents used as evidence?",
+    "ground_truth_context": "Manimaran claimed that his signatures were obtained on blank papers and that the documents were fabricated. However, the Supreme Court found this defense unconvincing and noted that he did not lodge any complaint about this alleged coercion.",
+    "ground_truth_answer": "Manimaran claimed that his signatures were obtained on blank papers and that the documents were fabricated. However, the Supreme Court found this defense unconvincing and noted that he did not lodge any complaint about this alleged coercion.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_084",
+    "query": "How did the appellants attempt to resolve the issue of the dishonoured cheque in the case of Ashutosh Ashok Parasrampuriya & Anr. vs M/S. Gharrkul Industries Pvt. Ltd. & Ors?",
+    "ground_truth_context": "After the dishonour of the cheque, the appellants were issued a legal notice demanding payment, which they refused to accept, leading to the filing of the complaint under Section 138 of the NI Act.",
+    "ground_truth_answer": "After the dishonour of the cheque, the appellants were issued a legal notice demanding payment, which they refused to accept, leading to the filing of the complaint under Section 138 of the NI Act.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_085",
+    "query": "What did the Supreme Court emphasize about the powers of investigation by the police?",
+    "ground_truth_context": "The Supreme Court emphasized that police have a statutory right to investigate cognizable offences without judicial interference unless exceptional circumstances justify such interference.",
+    "ground_truth_answer": "The Supreme Court emphasized that police have a statutory right to investigate cognizable offences without judicial interference unless exceptional circumstances justify such interference.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_086",
+    "query": "What is the significance of the Supreme Court of Law's decision in this case?",
+    "ground_truth_context": "The significance of the Supreme Court's decision is that it clarifies the interpretation of section 153A, limiting the scope of assessments to incriminating material found during searches, thus providing protection to taxpayers against unnecessary reopening of completed assessments.",
+    "ground_truth_answer": "The significance of the Supreme Court's decision is that it clarifies the interpretation of section 153A, limiting the scope of assessments to incriminating material found during searches, thus providing protection to taxpayers against unnecessary reopening of completed assessments.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_087",
+    "query": "What is the main issue in the case of Rama Narang vs. Ramesh Narang and Others?",
+    "ground_truth_context": "The main issue is a family dispute over the management and control of Narang International Hotel Limited (NIHL), leading to multiple contempt petitions and legal proceedings between Rama Narang and his sons from his first wife, Ramesh and Rajesh Narang.",
+    "ground_truth_answer": "The main issue is a family dispute over the management and control of Narang International Hotel Limited (NIHL), leading to multiple contempt petitions and legal proceedings between Rama Narang and his sons from his first wife, Ramesh and Rajesh Narang.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_088",
+    "query": "What was the reason for the winding up of Super Bazar?",
+    "ground_truth_context": "Super Bazar was wound up due to poor management and rising wage bills, which led to significant financial losses, as identified in an inquiry under Section 78 of the Multi-State Co-operative Societies Act 2002.",
+    "ground_truth_answer": "Super Bazar was wound up due to poor management and rising wage bills, which led to significant financial losses, as identified in an inquiry under Section 78 of the Multi-State Co-operative Societies Act 2002.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_089",
+    "query": "What was the main issue in the case of St. Mary's Education Society & Anr. vs. Rajendra Prasad Bhargava & Ors.?",
+    "ground_truth_context": "The main issue was whether a writ petition under Article 226 of the Constitution of India is maintainable against a private unaided minority institution and whether a service dispute involving a private educational institution and its employee can be adjudicated in such a writ petition.",
+    "ground_truth_answer": "The main issue was whether a writ petition under Article 226 of the Constitution of India is maintainable against a private unaided minority institution and whether a service dispute involving a private educational institution and its employee can be adjudicated in such a writ petition.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_090",
+    "query": "What is the likely outcome if the Union of India continues to assert possession over the disputed land?",
+    "ground_truth_context": "If the Union of India continues to assert possession over the disputed land and proves its continuous possession since 1958, the applicants may find it difficult to reclaim the land, especially without the production of the patta document.",
+    "ground_truth_answer": "If the Union of India continues to assert possession over the disputed land and proves its continuous possession since 1958, the applicants may find it difficult to reclaim the land, especially without the production of the patta document.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_091",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: How to get a driving license?\nA: Process for driving license: 1) Apply online or at RTO office, 2) Submit required documents (age proof, address proof, medical certificate), 3) Pass written test on traffic rules, 4) Pass driving test, 5) Pay fees and collect license. Learner's license is valid for 6 months, permanent license for 20 years.",
+    "ground_truth_answer": "Q: How to get a driving license?\nA: Process for driving license: 1) Apply online or at RTO office, 2) Submit required documents (age proof, address proof, medical certificate), 3) Pass written test on traffic rules, 4) Pass driving test, 5) Pay fees and collect license. Learner's license is valid for 6 months, permanent license for 20 years.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_092",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "CRIMINAL LAW (IPC, CrPC, Evidence Act)\n======================================",
+    "ground_truth_answer": "CRIMINAL LAW (IPC, CrPC, Evidence Act)\n======================================",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_093",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What are the essential elements of a valid contract?\nA: Under the Indian Contract Act, 1872, a valid contract must have: 1) Offer and acceptance, 2) Intention to create legal relations, 3) Lawful consideration, 4) Capacity of parties to contract, 5) Free consent, 6) Lawful object, 7) Not expressly declared void. All parties must be competent to contract (major, sound mind, not disqualified by law).",
+    "ground_truth_answer": "Q: What are the essential elements of a valid contract?\nA: Under the Indian Contract Act, 1872, a valid contract must have: 1) Offer and acceptance, 2) Intention to create legal relations, 3) Lawful consideration, 4) Capacity of parties to contract, 5) Free consent, 6) Lawful object, 7) Not expressly declared void. All parties must be competent to contract (major, sound mind, not disqualified by law).",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_094",
+    "query": "What principle of statutory interpretation did the Supreme Court apply in this case?",
+    "ground_truth_context": "The Supreme Court applied the principle that a statute is best interpreted when its purpose is understood, and that both the KTCP Act and the KIAD Act must be harmoniously construed to give effect to the legislative intent and avoid reducing the legislation to futility.",
+    "ground_truth_answer": "The Supreme Court applied the principle that a statute is best interpreted when its purpose is understood, and that both the KTCP Act and the KIAD Act must be harmoniously construed to give effect to the legislative intent and avoid reducing the legislation to futility.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_095",
+    "query": "Is murder a bailable offence?",
+    "ground_truth_context": "Every information of a cognizable offence may be given orally or by electronic communication; must be recorded and a free copy given. Preliminary enquiry in certain 3–<7 year offences; Zero FIR allowed irrespective of jurisdiction. | BNSS s.173 governs how cognizable‑offence information is recorded, including e‑FIR, Zero FIR and preliminary enquiry parameters. | information disclosing cognizable offence; oral or electronic mode; recording and signature within 3 days if electronic; entry in prescribed book",
+    "ground_truth_answer": "Every information of a cognizable offence may be given orally or by electronic communication; must be recorded and a free copy given. Preliminary enquiry in certain 3–<7 year offences; Zero FIR allowed irrespective of jurisdiction. | BNSS s.173 governs how cognizable‑offence information is recorded, including e‑FIR, Zero FIR and preliminary enquiry parameters. | information disclosing cognizable offence; oral or electronic mode; recording and signature within 3 days if electronic; entry in presc",
+    "language": "en",
+    "source": "kb_seed"
+  },
+  {
+    "id": "eval_096",
+    "query": "What was the motive behind the murder of Hanifa as per the prosecution's case?",
+    "ground_truth_context": "The motive behind the murder was a previous enmity due to a fight between Hanifa and Idrish, which had led to Hanifa being accused in a criminal case.",
+    "ground_truth_answer": "The motive behind the murder was a previous enmity due to a fight between Hanifa and Idrish, which had led to Hanifa being accused in a criminal case.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_097",
+    "query": "What is the legal position regarding sections 62–63 — electronic records: proof and admissibility?",
+    "ground_truth_context": "Electronic/digital records may be primary evidence; admissible if Section 63 conditions satisfied. Certificate requirements updated for electronic outputs.",
+    "ground_truth_answer": "Electronic/digital records may be primary evidence; admissible if Section 63 conditions satisfied. Certificate requirements updated for electronic outputs.",
+    "language": "en",
+    "source": "seed_notes"
+  },
+  {
+    "id": "eval_098",
+    "query": "What was the Supreme Court's finding regarding the respondents' continuous service since 1999?",
+    "ground_truth_context": "The Supreme Court found that the respondents had been continuously working since 1999, initially as employees of N.I.C.T. and later absorbed by the Council, which justified their regularization despite procedural irregularities.",
+    "ground_truth_answer": "The Supreme Court found that the respondents had been continuously working since 1999, initially as employees of N.I.C.T. and later absorbed by the Council, which justified their regularization despite procedural irregularities.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_099",
+    "query": "What was the decision of the High Court in the writ petition filed by Chandrika?",
+    "ground_truth_context": "The High Court dismissed the writ petition filed by Chandrika, thereby affirming the orders of the Consolidation Officer, Settlement Officer Consolidation, and Deputy Director of Consolidation.",
+    "ground_truth_answer": "The High Court dismissed the writ petition filed by Chandrika, thereby affirming the orders of the Consolidation Officer, Settlement Officer Consolidation, and Deputy Director of Consolidation.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_100",
+    "query": "What were the facts leading to P. Ramadas' conviction under Section 138 of the Indian Penal Code of the Negotiable Instruments Act?",
+    "ground_truth_context": "P. Ramadas issued a cheque for Rs. 2,45,000, which was dishonored. He was convicted by the Judicial First Class Magistrate-II, Ottappalam, sentenced to 3 months simple imprisonment, and ordered to pay the cheque amount as compensation.",
+    "ground_truth_answer": "P. Ramadas issued a cheque for Rs. 2,45,000, which was dishonored. He was convicted by the Judicial First Class Magistrate-II, Ottappalam, sentenced to 3 months simple imprisonment, and ordered to pay the cheque amount as compensation.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_101",
+    "query": "What was the significance of the CBI Manual in this case?",
+    "ground_truth_context": "The CBI Manual provides guidelines for investigations, including the procedure for Preliminary Enquiries, but it is not a statutory requirement overriding the Criminal Procedure Code.",
+    "ground_truth_answer": "The CBI Manual provides guidelines for investigations, including the procedure for Preliminary Enquiries, but it is not a statutory requirement overriding the Criminal Procedure Code.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_102",
+    "query": "What was Jasbir Singh originally convicted of by the Sessions Judge?",
+    "ground_truth_context": "Jasbir Singh was originally convicted under Section 302 read with Section 149 of the IPC for murder and was sentenced to life imprisonment.",
+    "ground_truth_answer": "Jasbir Singh was originally convicted under Section 302 read with Section 149 of the IPC for murder and was sentenced to life imprisonment.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_103",
+    "query": "What procedural violation did Subhash Kumar allege in his petition?",
+    "ground_truth_context": "Subhash Kumar alleged that the order relegating him to the Bihar Education Service was passed without affording him an opportunity of hearing, violating the principles of natural justice.",
+    "ground_truth_answer": "Subhash Kumar alleged that the order relegating him to the Bihar Education Service was passed without affording him an opportunity of hearing, violating the principles of natural justice.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_104",
+    "query": "What was the incident that led to the registration of the FIR in the Ramesh Bhavan Rathod vs. Vishanbhai Hirabhai Makwana (Koli) & Anr. case?",
+    "ground_truth_context": "The incident involved a violent altercation over a land dispute on 9th May 2020, resulting in the death of five persons, with the accused attacking the victims with firearms and sharp weapons.",
+    "ground_truth_answer": "The incident involved a violent altercation over a land dispute on 9th May 2020, resulting in the death of five persons, with the accused attacking the victims with firearms and sharp weapons.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_105",
+    "query": "What was the argument presented by Lt. Col. S. S. Bedi regarding the evidence against him?",
+    "ground_truth_context": "Lt. Col. S. S. Bedi argued that the evidence on record was not properly appreciated and that the testimonies of witnesses in his favor were ignored.",
+    "ground_truth_answer": "Lt. Col. S. S. Bedi argued that the evidence on record was not properly appreciated and that the testimonies of witnesses in his favor were ignored.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_106",
+    "query": "How did the Supreme Court view the non-examination of key witnesses?",
+    "ground_truth_context": "The Supreme Court viewed the non-examination of key witnesses like Pargat Singh and the prosecutrix's uncle as a significant omission, which weakened the prosecution's case.",
+    "ground_truth_answer": "The Supreme Court viewed the non-examination of key witnesses like Pargat Singh and the prosecutrix's uncle as a significant omission, which weakened the prosecution's case.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_107",
+    "query": "What was the role of the audit report in the allegations against Devendra Nath Singh?",
+    "ground_truth_context": "The audit report was a key piece of evidence forming the basis of the FIR, alleging that Devendra Nath Singh was responsible for the misappropriation of stocks from the godown. The High Court relied on this report to direct further investigation, but the Supreme Court found that a more thorough examination was needed.",
+    "ground_truth_answer": "The audit report was a key piece of evidence forming the basis of the FIR, alleging that Devendra Nath Singh was responsible for the misappropriation of stocks from the godown. The High Court relied on this report to direct further investigation, but the Supreme Court found that a more thorough examination was needed.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_108",
+    "query": "What was the argument presented by the Commissioner of Central Excise regarding the charges realized by the Assessees?",
+    "ground_truth_context": "The Commissioner of Central Excise argued that these charges should be included in the assessable value as they contribute to the value of the excisable goods and are essential for their marketability.",
+    "ground_truth_answer": "The Commissioner of Central Excise argued that these charges should be included in the assessable value as they contribute to the value of the excisable goods and are essential for their marketability.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_109",
+    "query": "How might this Supreme Court ruling affect future claims by children from void marriages?",
+    "ground_truth_context": "The ruling provides a precedent that children from void marriages can claim a share in their parents' properties, supporting their legal status and inheritance rights in similar disputes.",
+    "ground_truth_answer": "The ruling provides a precedent that children from void marriages can claim a share in their parents' properties, supporting their legal status and inheritance rights in similar disputes.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_110",
+    "query": "What was the Supreme Court's final decision regarding the conviction under Section 364A of the IPC?",
+    "ground_truth_context": "The Supreme Court set aside the conviction under Section 364A of the IPC due to insufficient evidence of the ransom demand and threat, but upheld the conviction under Section 363 for kidnapping.",
+    "ground_truth_answer": "The Supreme Court set aside the conviction under Section 364A of the IPC due to insufficient evidence of the ransom demand and threat, but upheld the conviction under Section 363 for kidnapping.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_111",
+    "query": "How did the prosecution establish the presence of the accused at the crime scene?",
+    "ground_truth_context": "The prosecution established the presence of the accused through witness testimonies, mobile phone records showing communication between the accused, and the recovery of items belonging to the deceased from the accused.",
+    "ground_truth_answer": "The prosecution established the presence of the accused through witness testimonies, mobile phone records showing communication between the accused, and the recovery of items belonging to the deceased from the accused.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_112",
+    "query": "What is the legal position regarding dangerous driving — offence & penalty (post‑2019 amendments)?",
+    "ground_truth_context": "Driving in a manner dangerous to the public is punishable; 2019 amendments enhanced fines and imprisonment thresholds. State compounding may apply.",
+    "ground_truth_answer": "Driving in a manner dangerous to the public is punishable; 2019 amendments enhanced fines and imprisonment thresholds. State compounding may apply.",
+    "language": "en",
+    "source": "seed_notes"
+  },
+  {
+    "id": "eval_113",
+    "query": "What role did the arbitrator play in this judgement?",
+    "ground_truth_context": "The arbitrator, appointed as Shri Soumitra Pal (Retd. Judge, High Court of Calcutta), was tasked with determining the compensation payable by WBMDTCL for the illegal occupation of the premises without any authority of law.",
+    "ground_truth_answer": "The arbitrator, appointed as Shri Soumitra Pal (Retd. Judge, High Court of Calcutta), was tasked with determining the compensation payable by WBMDTCL for the illegal occupation of the premises without any authority of law.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_114",
+    "query": "What directions did the Supreme Court issue to resolve the dispute?",
+    "ground_truth_context": "The Supreme Court directed the respondents to refund Rs.1,00,000/- to the appellant within three months, failing which interest at the rate of 6% per annum would apply. The appellant was ordered to restore possession of the suit land to the respondents within three months from the date of the judgment.",
+    "ground_truth_answer": "The Supreme Court directed the respondents to refund Rs.1,00,000/- to the appellant within three months, failing which interest at the rate of 6% per annum would apply. The appellant was ordered to restore possession of the suit land to the respondents within three months from the date of the judgment.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_115",
+    "query": "What was the main issue in the case of Ravindra Kumar vs. State of U.P. & Ors.?",
+    "ground_truth_context": "The main issue was whether non-disclosure of a criminal case in which the candidate was acquitted in the verification form is fatal for the candidate's employment.",
+    "ground_truth_answer": "The main issue was whether non-disclosure of a criminal case in which the candidate was acquitted in the verification form is fatal for the candidate's employment.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_116",
+    "query": "What impact could the Supreme Court's decision have on similar cases?",
+    "ground_truth_context": "The decision emphasizes the reliability of injured witness testimony and the importance of minor discrepancies not affecting the overall credibility, which could influence future rulings in similar cases.",
+    "ground_truth_answer": "The decision emphasizes the reliability of injured witness testimony and the importance of minor discrepancies not affecting the overall credibility, which could influence future rulings in similar cases.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_117",
+    "query": "What role did the evidence of hostile witnesses play in the decision of 'Panchram vs. The State of Chhattisgarh & Anr.'?",
+    "ground_truth_context": "Several witnesses, including Rajkumar alias Munna, Kantilal, and Radhey Shyam, were declared hostile and did not support the prosecution's version, which influenced the Supreme Court's decision to modify the conviction.",
+    "ground_truth_answer": "Several witnesses, including Rajkumar alias Munna, Kantilal, and Radhey Shyam, were declared hostile and did not support the prosecution's version, which influenced the Supreme Court's decision to modify the conviction.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_118",
+    "query": "What additional directions did the Supreme Court give in the case Hameed Kunju vs. Nazim?",
+    "ground_truth_context": "The Supreme Court emphasized the need for speedy disposal of eviction cases, especially those claimed on the grounds of bona fide need, and awarded costs of Rs. 25,000 to be paid by Nazim to Hameed Kunju.",
+    "ground_truth_answer": "The Supreme Court emphasized the need for speedy disposal of eviction cases, especially those claimed on the grounds of bona fide need, and awarded costs of Rs. 25,000 to be paid by Nazim to Hameed Kunju.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_119",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What are patient rights?\nA: Patient rights include: 1) Right to informed consent, 2) Right to privacy and confidentiality, 3) Right to quality medical care, 4) Right to information about treatment, 5) Right to second opinion, 6) Right to medical records, 7) Right to grievance redressal, 8) Right to emergency care.",
+    "ground_truth_answer": "Q: What are patient rights?\nA: Patient rights include: 1) Right to informed consent, 2) Right to privacy and confidentiality, 3) Right to quality medical care, 4) Right to information about treatment, 5) Right to second opinion, 6) Right to medical records, 7) Right to grievance redressal, 8) Right to emergency care.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_120",
+    "query": "What was the Supreme Court's final decision in this case?",
+    "ground_truth_context": "The Supreme Court dismissed the appeals, upheld the High Court's decision to convict Achhar Singh under Sections 452, 326, and 323 IPC and Budhi Singh under Sections 302 and 452 IPC, and directed them to undergo the remainder of their sentences.",
+    "ground_truth_answer": "The Supreme Court dismissed the appeals, upheld the High Court's decision to convict Achhar Singh under Sections 452, 326, and 323 IPC and Budhi Singh under Sections 302 and 452 IPC, and directed them to undergo the remainder of their sentences.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_121",
+    "query": "What was the Supreme Court's stance on the interim arrangements made by the High Court?",
+    "ground_truth_context": "The Supreme Court did not interfere with the interim arrangement made by the High Court, which directed Adani Electricity Mumbai Ltd. to deposit 50 percent of the standby amount as an interim measure, as the final decision on the dispute was expected from the Electricity Regulatory Commission.",
+    "ground_truth_answer": "The Supreme Court did not interfere with the interim arrangement made by the High Court, which directed Adani Electricity Mumbai Ltd. to deposit 50 percent of the standby amount as an interim measure, as the final decision on the dispute was expected from the Electricity Regulatory Commission.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_122",
+    "query": "What was the Supreme Court's view on the appellant's placement compared to the co-accused?",
+    "ground_truth_context": "The Supreme Court viewed Vinod @ Sai D. Ghogale as being similarly placed as the co-accused who had been granted bail.",
+    "ground_truth_answer": "The Supreme Court viewed Vinod @ Sai D. Ghogale as being similarly placed as the co-accused who had been granted bail.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_123",
+    "query": "What was the Supreme Court's decision regarding the appeals filed by Madan Mohan Mahto and Jagmohan Mahto?",
+    "ground_truth_context": "The Supreme Court dismissed the appeals, upholding the convictions and life sentences of Madan Mohan Mahto and Jagmohan Mahto under Section 302 read with Section 34 IPC.",
+    "ground_truth_answer": "The Supreme Court dismissed the appeals, upholding the convictions and life sentences of Madan Mohan Mahto and Jagmohan Mahto under Section 302 read with Section 34 IPC.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_124",
+    "query": "What did the Supreme Court say about the recruitment guidelines for the Unit Headquarters Quota?",
+    "ground_truth_context": "The Supreme Court highlighted that the recruitment guidelines allowed for open category recruitment if additional vacancies were available after considering priority categories, contradicting the respondents' claim that recruitment was only for relatives of servicemen/ex-servicemen.",
+    "ground_truth_answer": "The Supreme Court highlighted that the recruitment guidelines allowed for open category recruitment if additional vacancies were available after considering priority categories, contradicting the respondents' claim that recruitment was only for relatives of servicemen/ex-servicemen.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_125",
+    "query": "What was the petitioner's argument for transferring the case to Ahmedabad?",
+    "ground_truth_context": "The petitioner argued that he resides in Ahmedabad after retirement, and transferring the case would avoid inconvenience and undue hardship.",
+    "ground_truth_answer": "The petitioner argued that he resides in Ahmedabad after retirement, and transferring the case would avoid inconvenience and undue hardship.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_126",
+    "query": "How did the Supreme Court clarify the status quo order on 15th February 2018?",
+    "ground_truth_context": "The Supreme Court clarified that the status quo order would not apply to shares of Fortis Healthcare Limited held by Fortis Healthcare Holding Private Limited that had been encumbered before the interim orders dated 11th August 2017 and 31st August 2017 were passed.",
+    "ground_truth_answer": "The Supreme Court clarified that the status quo order would not apply to shares of Fortis Healthcare Limited held by Fortis Healthcare Holding Private Limited that had been encumbered before the interim orders dated 11th August 2017 and 31st August 2017 were passed.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_127",
+    "query": "What were the charges against Murali and Rajavelu?",
+    "ground_truth_context": "Murali was charged under Sections 324 and 341 of the IPC, while Rajavelu was charged under Sections 307 and 341 of the IPC.",
+    "ground_truth_answer": "Murali was charged under Sections 324 and 341 of the IPC, while Rajavelu was charged under Sections 307 and 341 of the IPC.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_128",
+    "query": "What impact does this judgment have on future cases involving police presence during a crime?",
+    "ground_truth_context": "This judgment highlights the need for a thorough and transparent investigation, especially when police are present during a crime, to ensure the credibility of the prosecution's case.",
+    "ground_truth_answer": "This judgment highlights the need for a thorough and transparent investigation, especially when police are present during a crime, to ensure the credibility of the prosecution's case.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_129",
+    "query": "What does the comprehensive_legal_faq.txt say about text?",
+    "ground_truth_context": "Q: What are environmental protection laws?\nA: Key environmental laws: 1) Environment Protection Act, 1986, 2) Air (Prevention and Control of Pollution) Act, 1981, 3) Water (Prevention and Control of Pollution) Act, 1974, 4) Forest Conservation Act, 1980, 5) Wildlife Protection Act, 1972. These laws regulate pollution, conservation, and environmental impact assessment.",
+    "ground_truth_answer": "Q: What are environmental protection laws?\nA: Key environmental laws: 1) Environment Protection Act, 1986, 2) Air (Prevention and Control of Pollution) Act, 1981, 3) Water (Prevention and Control of Pollution) Act, 1974, 4) Forest Conservation Act, 1980, 5) Wildlife Protection Act, 1972. These laws regulate pollution, conservation, and environmental impact assessment.",
+    "language": "en",
+    "source": "comprehensive_legal_faq.txt"
+  },
+  {
+    "id": "eval_130",
+    "query": "Why did the Supreme Court of Law set aside the High Court of Law's order?",
+    "ground_truth_context": "The Supreme Court set aside the High Court's order because it was passed in a cryptic manner without mentioning the facts, considering submissions of the parties, or assigning reasons, making it difficult to understand the factual background and reasoning behind the decision.",
+    "ground_truth_answer": "The Supreme Court set aside the High Court's order because it was passed in a cryptic manner without mentioning the facts, considering submissions of the parties, or assigning reasons, making it difficult to understand the factual background and reasoning behind the decision.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_131",
+    "query": "What is the court's stance on the petitioner's suggestions about the composition of benches in the High Courts?",
+    "ground_truth_context": "The court rejected the petitioner's suggestions about the composition of benches in the High Courts, emphasizing that there should be no distinction between judges drawn from the Bar and those from the district judiciary. Both are appointed under Article 217 of the Constitution and perform the same functions.",
+    "ground_truth_answer": "The court rejected the petitioner's suggestions about the composition of benches in the High Courts, emphasizing that there should be no distinction between judges drawn from the Bar and those from the district judiciary. Both are appointed under Article 217 of the Constitution and perform the same functions.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_132",
+    "query": "What was the argument made by the petitioners in this case?",
+    "ground_truth_context": "The petitioners argued that the First Register of pharmacists prepared by the erstwhile State of Bihar should be deemed the First Register for the State of Jharkhand and that any subsequent registration should comply with the qualifications as per the Education Regulations, 1991.",
+    "ground_truth_answer": "The petitioners argued that the First Register of pharmacists prepared by the erstwhile State of Bihar should be deemed the First Register for the State of Jharkhand and that any subsequent registration should comply with the qualifications as per the Education Regulations, 1991.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_133",
+    "query": "What was the main legal issue in the case of State of Madhya Pradesh vs. Sabal Singh (Dead) by LRS. & Ors.?",
+    "ground_truth_context": "The main issue was whether the land recorded as 'Grass' land in the revenue papers before the date of vesting could be treated as Khud-Kasht land of the Ex-Zamindar, thus entitling the plaintiffs to Bhumiswami rights under the Madhya Pradesh Land Revenue Code.",
+    "ground_truth_answer": "The main issue was whether the land recorded as 'Grass' land in the revenue papers before the date of vesting could be treated as Khud-Kasht land of the Ex-Zamindar, thus entitling the plaintiffs to Bhumiswami rights under the Madhya Pradesh Land Revenue Code.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_134",
+    "query": "What was the relationship between the appellant Karuppanna Gounder and the deceased Chinnappa Gounder?",
+    "ground_truth_context": "Karuppanna Gounder and Chinnappa Gounder were neighbors who shared a common boundary and a well between their properties.",
+    "ground_truth_answer": "Karuppanna Gounder and Chinnappa Gounder were neighbors who shared a common boundary and a well between their properties.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_135",
+    "query": "What was the Supreme Court's final decision regarding the sentence of Navjot Singh Sidhu?",
+    "ground_truth_context": "The Supreme Court imposed a one-year rigorous imprisonment on Navjot Singh Sidhu, in addition to the fine of Rs.1,000 previously imposed.",
+    "ground_truth_answer": "The Supreme Court imposed a one-year rigorous imprisonment on Navjot Singh Sidhu, in addition to the fine of Rs.1,000 previously imposed.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_136",
+    "query": "What was the content of the suicide note found by the police?",
+    "ground_truth_context": "The suicide note mentioned 'THANKS GEO (PTI) OF MY SCHOOL' and other statements indicating the student's mental state but did not directly attribute specific acts of harassment by Geo Varghese.",
+    "ground_truth_answer": "The suicide note mentioned 'THANKS GEO (PTI) OF MY SCHOOL' and other statements indicating the student's mental state but did not directly attribute specific acts of harassment by Geo Varghese.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_137",
+    "query": "What did the Supreme Court observe regarding the evidence of strangulation and poisoning in the case of Dev Kanya Tiwari vs. The State of U.P.?",
+    "ground_truth_context": "The Supreme Court observed that the evidence of strangulation was not conclusive and that there was significant evidence supporting the possibility of suicide by poisoning. The Court noted the lack of independent witnesses and the failure to preserve viscera as critical lapses in the prosecution's case.",
+    "ground_truth_answer": "The Supreme Court observed that the evidence of strangulation was not conclusive and that there was significant evidence supporting the possibility of suicide by poisoning. The Court noted the lack of independent witnesses and the failure to preserve viscera as critical lapses in the prosecution's case.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_138",
+    "query": "What impact might the Supreme Court's ruling have on future cases involving similar charges like Ashwani Kumar & Anr. vs The State of Punjab?",
+    "ground_truth_context": "The ruling reinforces the importance of consistent and reliable eyewitness testimony and forensic evidence in upholding convictions for serious crimes like murder.",
+    "ground_truth_answer": "The ruling reinforces the importance of consistent and reliable eyewitness testimony and forensic evidence in upholding convictions for serious crimes like murder.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_139",
+    "query": "What was the Supreme Court's observation regarding the Contempt Court's jurisdiction in this case?",
+    "ground_truth_context": "The Supreme Court observed that the Contempt Court had exceeded its jurisdiction by compelling the presence of State officers and issuing orders beyond the scope of ensuring compliance with the High Court's original order.",
+    "ground_truth_answer": "The Supreme Court observed that the Contempt Court had exceeded its jurisdiction by compelling the presence of State officers and issuing orders beyond the scope of ensuring compliance with the High Court's original order.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_140",
+    "query": "What was the context of the financial transaction involved in this case?",
+    "ground_truth_context": "The financial transaction involved a loan of Rs.2.68 crores sanctioned by Canara Bank to the complainant, with the property as collateral. Due to alleged default in repayment, the property was classified as a Non-Performing Asset (NPA) and auctioned at a lower reserve price.",
+    "ground_truth_answer": "The financial transaction involved a loan of Rs.2.68 crores sanctioned by Canara Bank to the complainant, with the property as collateral. Due to alleged default in repayment, the property was classified as a Non-Performing Asset (NPA) and auctioned at a lower reserve price.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_141",
+    "query": "What was the primary legal issue in the case P. V. Nidhish & Ors. vs Kerala State Wakf Board & Anr.?",
+    "ground_truth_context": "The primary legal issue was whether the appellants, who were long-term tenants of certain premises, could be treated as 'encroachers' under the Wakf Act, 1995, as amended in 2013, and prosecuted under Section 52A for occupying the wakf property without authorization.",
+    "ground_truth_answer": "The primary legal issue was whether the appellants, who were long-term tenants of certain premises, could be treated as 'encroachers' under the Wakf Act, 1995, as amended in 2013, and prosecuted under Section 52A for occupying the wakf property without authorization.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_142",
+    "query": "What was the Supreme Court of Law's decision regarding the jurisdiction of the civil Court of Law in this case?",
+    "ground_truth_context": "The Supreme Court upheld the decision of the High Court, stating that the civil court did not have jurisdiction to try the suit as the relief sought by Pyarelal required a determination of khatedari rights, which falls exclusively under the jurisdiction of the revenue court as per the Rajasthan Tenancy Act, 1955.",
+    "ground_truth_answer": "The Supreme Court upheld the decision of the High Court, stating that the civil court did not have jurisdiction to try the suit as the relief sought by Pyarelal required a determination of khatedari rights, which falls exclusively under the jurisdiction of the revenue court as per the Rajasthan Tenancy Act, 1955.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_143",
+    "query": "What was the sentence imposed by the Madras High Court on N. Vijayakumar?",
+    "ground_truth_context": "N. Vijayakumar was sentenced to rigorous imprisonment for one year and a penalty of Rs.5000/-.",
+    "ground_truth_answer": "N. Vijayakumar was sentenced to rigorous imprisonment for one year and a penalty of Rs.5000/-.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  },
+  {
+    "id": "eval_144",
+    "query": "What rationale did the Supreme Court provide for rejecting the plea for leniency?",
+    "ground_truth_context": "The Supreme Court stated that mandatory instructions issued by the Commission have the force of law and must be strictly followed to ensure fairness and impartiality in public examinations.",
+    "ground_truth_answer": "The Supreme Court stated that mandatory instructions issued by the Commission have the force of law and must be strictly followed to ensure fairness and impartiality in public examinations.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_145",
+    "query": "What was the main issue in the case of Pulen Phukan & Ors. vs State of Assam?",
+    "ground_truth_context": "The main issue was whether Pulen Phukan and the other appellants were correctly convicted for the murder of Pradip Phukan and the assault on Robi Phukan under Sections 147, 148, 447, 323, 302, and 149 of the Indian Penal Code.",
+    "ground_truth_answer": "The main issue was whether Pulen Phukan and the other appellants were correctly convicted for the murder of Pradip Phukan and the assault on Robi Phukan under Sections 147, 148, 447, 323, 302, and 149 of the Indian Penal Code.",
+    "language": "en",
+    "source": "optimized_legal_train"
+  },
+  {
+    "id": "eval_146",
+    "query": "What was the outcome of Suit No.106 of 1967 filed by the appellants?",
+    "ground_truth_context": "The suit was dismissed on 29th March 1975, with the trial court holding that the appellants had not been able to prove their title to the suit land.",
+    "ground_truth_answer": "The suit was dismissed on 29th March 1975, with the trial court holding that the appellants had not been able to prove their title to the suit land.",
+    "language": "en",
+    "source": "indic_legal_qa_train"
+  }
+]
