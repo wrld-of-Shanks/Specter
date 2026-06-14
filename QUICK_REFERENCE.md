@@ -44,21 +44,6 @@ use specter_legal
 show collections
 ```
 
-### Ollama (LLM)
-```bash
-# Start Ollama server
-ollama serve
-
-# Pull model
-ollama pull llama2
-
-# List models
-ollama list
-
-# Test model
-ollama run llama2 "What is bail?"
-```
-
 ---
 
 ## 📁 Project Structure
@@ -107,9 +92,6 @@ DATABASE_NAME=specter_legal
 # JWT
 JWT_SECRET_KEY=your-secret-key-here
 
-# Ollama
-OLLAMA_BASE_URL=http://localhost:11434
-OLLAMA_MODEL=llama2
 ```
 
 ### Optional
@@ -228,14 +210,7 @@ mongod
 # Or use MongoDB Atlas (cloud)
 ```
 
-### Issue: "Ollama connection failed"
-```bash
-# Start Ollama
-ollama serve
 
-# Pull model
-ollama pull llama2
-```
 
 ### Issue: "CORS error"
 ```bash
@@ -442,7 +417,6 @@ asyncio.run(test())
 - **FastAPI Docs:** https://fastapi.tiangolo.com/
 - **React Docs:** https://react.dev/
 - **MongoDB Docs:** https://docs.mongodb.com/
-- **Ollama Docs:** https://ollama.com/docs
 - **Tesseract Docs:** https://tesseract-ocr.github.io/
 
 ---

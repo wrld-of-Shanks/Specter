@@ -69,15 +69,15 @@
 │                      External Services                           │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │   MongoDB    │  │    Ollama    │  │  Tesseract   │         │
-│  │   Database   │  │     LLM      │  │     OCR      │         │
-│  ├──────────────┤  ├──────────────┤  ├──────────────┤         │
-│  │ • Users      │  │ • llama2     │  │ • Image OCR  │         │
-│  │ • Sessions   │  │ • Summaries  │  │ • PDF OCR    │         │
-│  │ • Usage Data │  │ • Translation│  │              │         │
-│  │ • Contacts   │  │ • Verification│ │              │         │
-│  └──────────────┘  └──────────────┘  └──────────────┘         │
+│  ┌──────────────┐  ┌──────────────┐                              │
+│  │   MongoDB    │  │  Tesseract   │                              │
+│  │   Database   │  │     OCR      │                              │
+│  ├──────────────┤  ├──────────────┤                              │
+│  │ • Users      │  │ • Image OCR  │                              │
+│  │ • Sessions   │  │ • PDF OCR    │                              │
+│  │ • Usage Data │  │              │                              │
+│  │ • Contacts   │  │              │                              │
+│  └──────────────┘  └──────────────┘                              │
 │                                                                  │
 │  ┌──────────────┐  ┌──────────────┐                            │
 │  │   ChromaDB   │  │    Email     │                            │
@@ -145,12 +145,7 @@ Frontend
       Backend API
       │
       ├─→ Legal Analyzer
-      │   ├─→ Summarize: Generate structured summary
-      │   ├─→ Translate: Translate to target language
-      │   └─→ Verify: Check legal compliance
-      │       │
-      │       └─→ Ollama LLM
-      │           └─→ Generate analysis
+      │   └─→ Analyze document structure and content
       │
       └─→ Return: {summary/translation/verification}
       │
@@ -275,7 +270,7 @@ backend/
 - **Authentication:** JWT + bcrypt
 - **Database:** MongoDB (Motor async driver)
 - **Vector DB:** ChromaDB
-- **LLM:** Ollama (llama2)
+- **LLM:** None (retrieval-only architecture)
 - **OCR:** Tesseract + pdf2image
 - **Document Processing:** PyPDF2, python-docx, Pillow
 
@@ -283,7 +278,7 @@ backend/
 - **Backend Hosting:** Render / Railway
 - **Frontend Hosting:** Netlify / Vercel
 - **Database:** MongoDB Atlas
-- **LLM:** Self-hosted Ollama or cloud API
+- **LLM:** None (retrieval-only — fully offline)
 
 ## Security Features
 

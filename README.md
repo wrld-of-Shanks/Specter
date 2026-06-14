@@ -15,7 +15,7 @@ SPECTER uses a **Retrieval-Augmented Generation (RAG)** pipeline:
    - **Where to Go** — Relevant courts, police stations, or authorities
 4. **Classification** → Queries are auto-classified into 10+ situation types (fake case, divorce, domestic violence, bail, property dispute, consumer, cyber crime, FIR filing, landlord-tenant, etc.) and answered with situation-specific advice templates.
 
-**v2.0 uses retrieval-only mode by default** — answers are built directly from the legal database without any external API. This is a change from v1.0 which required Google Gemini. The system now works completely offline, using its own curated corpus of Indian legal texts.
+**v2.0 uses retrieval-only mode** — answers are built directly from the legal database without any external API. The system works completely offline, using its own curated corpus of Indian legal texts.
 
 ### Architecture
 
@@ -61,11 +61,11 @@ Evaluated on **146 curated test samples** using 4 retrieval metrics:
 
 **BM25 baseline comparison**: The BM25 keyword-search baseline (Config A) achieves P@1 = 0.8356 vs vector search (Config B) P@1 = 0.5959, confirming that keyword matching is highly effective for Indian legal case-law retrieval. The vector search excels at semantic understanding of paraphrased queries.
 
-**Latency**: Average response time < 1s in LLM mode, ~7s in retrieval-only mode (due to Ollama connection timeout).
+**Latency**: Average response time < 1s per query in retrieval-only mode.
 
 Run evaluation yourself:
 ```bash
-python run_experiments.py --configs A,B,C,D
+python run_experiments.py
 ```
 
 ## Features
@@ -110,7 +110,7 @@ npm start               # runs on :3000
 
 - **Backend**: Python 3.10, FastAPI, Motor (async MongoDB), ChromaDB, sentence-transformers (all-MiniLM-L6-v2)
 - **Frontend**: React 18, TypeScript, Material-UI
-- **LLM**: Google Gemini Flash (optional, with Ollama fallback)
+- **LLM**: None (retrieval-only architecture — fully offline)
 - **Infrastructure**: Render Free Tier, MongoDB Atlas, optional Redis
 
 ## License

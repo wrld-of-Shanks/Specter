@@ -1,8 +1,7 @@
 """
-Specter 2.0 — Semantic RAG Chat Engine
+Specter 2.0 — Retrieval-Only RAG Chat Engine
 Async version with Redis cache support.
-Uses ChromaDB vector search + Gemini for answer generation.
-Falls back to retrieval-only mode with structured advice when no LLM is available.
+Uses ChromaDB vector search + situation-aware template responses.
 """
 
 import logging
@@ -10,7 +9,6 @@ import re
 from typing import Dict, List, Optional
 
 from embed_store import search_chunks
-from local_llm import generate_with_context
 from cache_service import get_cached_answer, set_cached_answer
 
 logger = logging.getLogger(__name__)
@@ -275,48 +273,6 @@ def build_advice_response(query: str, chunks: List[Dict], situation: str) -> str
     return "\n".join(lines).strip()
 
 
-SYSTEM_PROMPT = """You are SPECTER, an AI legal assistant specialized in Indian law.
-You help ordinary Indian citizens understand their legal rights and obligations.
-
-Rules you must follow:
-1. Answer ONLY based on the provided legal context and your knowledge of Indian statutes.
-2. If the context does not contain enough information, say so clearly — do not hallucinate.
-3. Always cite the specific law, section, or act when you reference it (e.g. "Section 498A IPC", "Section 9 of The Hindu Marriage Act 1955").
-4. Use simple, plain English. Avoid legal jargon unless you immediately explain it.
-5. If the user's question implies an emergency (arrest, domestic violence, eviction), lead with the most urgent actionable advice.
-6. Never provide advice that requires a licensed advocate — always recommend consulting one for serious matters.
-7. Keep answers concise: under 300 words unless the question requires more detail."""
-
-
-def build_rag_prompt(
-    query: str,
-    context_chunks: List[Dict],
-    chat_history: Optional[List[Dict]] = None
-) -> List[Dict]:
-    if context_chunks:
-        context_parts = []
-        for i, chunk in enumerate(context_chunks, 1):
-            context_parts.append(
-                f"[Source {i}: {chunk['source']} | confidence {chunk['score']:.0%}]\n{chunk['text']}"
-            )
-        context_block = "\n\n---\n\n".join(context_parts)
-    else:
-        context_block = "No specific legal context retrieved. Answer from general Indian law knowledge."
-
-    user_message = (
-        f"Legal context retrieved:\n\n{context_block}\n\n"
-        f"---\n\nUser question: {query}"
-    )
-
-    messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-
-    if chat_history:
-        messages.extend(chat_history[-MAX_HISTORY_TURNS:])
-
-    messages.append({"role": "user", "content": user_message})
-    return messages
-
-
 async def answer_query_with_rag(
     query: str,
     user_id: str = None,
@@ -341,31 +297,16 @@ async def answer_query_with_rag(
             logger.info(f"[RAG] No chunks above threshold {SIMILARITY_THRESHOLD}. Using low-confidence context.")
             confident_chunks = chunks[:2]
 
-        messages = build_rag_prompt(query, confident_chunks, chat_history)
+        situation = classify_query(query)
+        logger.info(f"[RAG] Classified query as: {situation}")
 
-        system_msg = messages[0]["content"]
-        user_parts = []
-        for msg in messages[1:]:
-            prefix = "User" if msg["role"] == "user" else "Assistant"
-            user_parts.append(f"{prefix}: {msg['content']}")
-        full_user_prompt = "\n\n".join(user_parts)
-
-        answer = None
-        try:
-            answer = generate_with_context(system_msg, full_user_prompt, temperature=0.2)
-        except Exception as e:
-            logger.warning(f"LLM generation failed: {e}. Falling back to retrieval-only mode.")
+        answer = build_advice_response(query, confident_chunks, situation)
 
         sources = list({c["source"] for c in confident_chunks}) if confident_chunks else []
         avg_confidence = (
             sum(c["score"] for c in confident_chunks) / len(confident_chunks)
             if confident_chunks else 0.0
         )
-
-        if answer is None or answer.startswith("Error:"):
-            situation = classify_query(query)
-            logger.info(f"[RAG] Classified query as: {situation}")
-            answer = build_advice_response(query, confident_chunks, situation)
 
         result = {
             "answer": answer,

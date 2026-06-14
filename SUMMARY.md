@@ -125,10 +125,6 @@ pip3 install -r requirements.txt
 # Install OCR tools (macOS)
 brew install tesseract poppler
 
-# Install Ollama (for LLM features)
-curl -fsSL https://ollama.com/install.sh | sh
-ollama pull llama2
-
 # Configure environment
 cp .env.example .env
 # Edit .env with your settings
@@ -196,10 +192,6 @@ DATABASE_NAME=specter_legal
 # JWT
 JWT_SECRET_KEY=your-secret-key-here
 
-# Ollama (LLM)
-OLLAMA_BASE_URL=http://localhost:11434
-OLLAMA_MODEL=llama2
-
 # Email (for lawyer contact)
 LAWYER_SMTP_USER=your-email@gmail.com
 LAWYER_SMTP_PASS=your-app-password
@@ -216,7 +208,7 @@ LAWYER_RECEIVER_EMAIL=lawyer@example.com
 **Optional (for full features):**
 - Tesseract OCR (for image processing)
 - Poppler (for PDF processing)
-- Ollama (for LLM features)
+
 
 ---
 
@@ -301,14 +293,13 @@ LAWYER_RECEIVER_EMAIL=lawyer@example.com
 
 ## 🔍 Known Limitations & Solutions
 
-### 1. LLM Dependency
-**Limitation:** Summarization, translation, and verification require Ollama.
+### 1. Offline Limitations
+**Note:** The system runs in retrieval-only mode — LLM-dependent features are not available.
 
 **Solutions:**
-- ✅ Pattern matching provides basic functionality without LLM
-- ✅ Document type ID works without LLM for common types
-- ✅ Clear error messages when LLM unavailable
-- 🔮 Future: Add cloud LLM support (OpenAI, Gemini)
+- ✅ Situation-aware templates provide structured legal guidance
+- ✅ Document type ID works for common types
+- ✅ Clear error messages when features unavailable
 
 ### 2. OCR Dependency
 **Limitation:** Tesseract and Poppler must be installed.
@@ -352,7 +343,7 @@ LAWYER_RECEIVER_EMAIL=lawyer@example.com
 - [ ] All tests passing
 - [ ] Environment variables configured
 - [ ] MongoDB connection verified
-- [ ] Ollama running and model loaded
+
 - [ ] OCR tools installed (if needed)
 
 ### Backend Deployment
@@ -416,7 +407,7 @@ All requested features are working correctly:
 The system has been thoroughly tested and verified. You can now:
 1. Use it for development and testing
 2. Deploy to staging environment
-3. Deploy to production (after setting up Ollama and MongoDB)
+3. Deploy to production (after setting up MongoDB)
 
 **Next Steps:**
 1. Review the documentation

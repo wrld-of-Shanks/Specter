@@ -24,23 +24,14 @@ sudo apt-get install tesseract-ocr
 sudo apt-get install poppler-utils
 ```
 
-### 3. Setup Ollama (for LLM features)
-```bash
-# Install Ollama
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Pull the model
-ollama pull llama2
-```
-
-### 4. Setup MongoDB
+### 3. Setup MongoDB
 You need a MongoDB instance running. Options:
 - **Local:** Install MongoDB locally
 - **Cloud:** Use MongoDB Atlas (free tier available)
 
 Update your `.env` file with MongoDB connection string.
 
-### 5. Configure Environment Variables
+### 4. Configure Environment Variables
 Copy `.env.example` to `.env` and fill in the values:
 ```bash
 cp backend/.env.example backend/.env
@@ -49,8 +40,6 @@ cp backend/.env.example backend/.env
 Required variables:
 - `MONGODB_URL` - MongoDB connection string
 - `JWT_SECRET_KEY` - Secret key for JWT tokens
-- `OLLAMA_BASE_URL` - Ollama API URL (default: http://localhost:11434)
-- `OLLAMA_MODEL` - Model name (default: llama2)
 
 ## Running Tests
 
@@ -152,13 +141,7 @@ brew install poppler
 sudo apt-get install poppler-utils
 ```
 
-### Issue 3: "Ollama connection failed"
-**Solution:** 
-1. Ensure Ollama is running: `ollama serve`
-2. Check if model is pulled: `ollama list`
-3. Pull model if needed: `ollama pull llama2`
-
-### Issue 4: "MongoDB connection failed"
+### Issue 3: "MongoDB connection failed"
 **Solution:**
 1. Check if MongoDB is running
 2. Verify connection string in `.env`
@@ -275,7 +258,6 @@ For issues or questions:
 1. Check the logs: `tail -f backend/logs/app.log`
 2. Review error messages in browser console
 3. Check MongoDB logs
-4. Review Ollama logs
 
 ## License
 See LICENSE file for details.

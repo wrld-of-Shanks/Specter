@@ -151,18 +151,17 @@ Document analysis features operational:
 
 ## Known Limitations
 
-### 1. LLM Dependency
-**Issue:** Summarization, translation, and verification require Ollama to be running.
+### 1. Offline Limitations
+**Note:** The system runs in retrieval-only mode — summarization and translation features are not available.
 
 **Workaround:** 
-- Pattern matching provides basic functionality without LLM
-- Document type identification works without LLM for common types
-- Error messages guide users when LLM is unavailable
+- Situation-aware template responses provide structured legal guidance without LLM
+- Document type identification works for common types
+- Error messages guide users when features are unavailable
 
 **Future Enhancement:**
-- Add support for cloud-based LLMs (OpenAI, Google Gemini)
-- Implement caching for common queries
-- Add offline mode with limited functionality
+- Implement local inference for summarization
+- Add caching for common queries
 
 ### 2. OCR Dependency
 **Issue:** Tesseract and Poppler must be installed on the system.
@@ -191,13 +190,7 @@ Document analysis features operational:
 ## Recommendations
 
 ### For Development
-1. **Install Ollama** for full LLM functionality
-   ```bash
-   curl -fsSL https://ollama.com/install.sh | sh
-   ollama pull llama2
-   ```
-
-2. **Install OCR Tools** for image processing
+1. **Install OCR Tools** for image processing
    ```bash
    # macOS
    brew install tesseract poppler
@@ -251,12 +244,11 @@ The SPECTER system is **fully operational** with all major features working corr
 The system is ready for:
 - ✅ Development and testing
 - ✅ Staging deployment
-- ✅ Production deployment (with Ollama and MongoDB setup)
+- ✅ Production deployment (with MongoDB setup)
 
 ## Next Steps
 
-1. **Setup Ollama** for full LLM functionality
-2. **Configure MongoDB** for production
+1. **Configure MongoDB** for production
 3. **Deploy Backend** to Render/Railway
 4. **Deploy Frontend** to Netlify/Vercel
 5. **Setup Monitoring** and logging

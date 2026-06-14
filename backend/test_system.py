@@ -189,9 +189,7 @@ def test_legal_analyzer():
         doc_type = legal_analyzer.identify_document_type(sample_doc)
         print(f"✓ Document Type: {doc_type}")
         
-        # Note: These tests will only work if Ollama is running
-        print("\nNote: Summarization and verification tests require Ollama to be running.")
-        print("Skipping LLM-dependent tests for now.")
+        print("\nSkipping LLM-dependent tests (system runs in retrieval-only mode).")
         
         print("\n✓ Legal analyzer test completed!\n")
         return True

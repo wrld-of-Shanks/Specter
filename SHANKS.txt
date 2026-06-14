@@ -56,8 +56,8 @@ ABSTRACT
 
   Recent advances in Natural Language Processing (NLP) and information
   retrieval have enabled the development of legal AI assistants. However,
-  existing solutions predominantly rely on commercial LLM APIs (GPT-4, Gemini,
-  Claude), which introduce recurring costs, privacy concerns, and dependency on
+  existing solutions predominantly rely on commercial LLM APIs (GPT-4, Claude,
+  etc.), which introduce recurring costs, privacy concerns, and dependency on
   internet connectivity. For a system intended to serve India's diverse
   population, including those in rural areas with limited connectivity, an
   offline-capable solution is essential.
@@ -307,9 +307,8 @@ ABSTRACT
   vector search (these figures reflect the corpus at the time of evaluation; the
   current expanded corpus contains 59,630 chunks).
 
-  The LLM-as-a-Judge evaluation (using Gemini Flash to score answer faithfulness
-  and relevance) produced zero scores due to the absence of a valid API key at
-  evaluation time. This limitation will be addressed in future work.
+  LLM-as-a-Judge evaluation was not performed (no LLM backend is configured, as
+  the system is designed for fully offline retrieval-only operation).
 
 ================================================================================
 5. LIMITATIONS AND DISCUSSION

@@ -12,7 +12,7 @@ import numpy as np
 from typing import Dict, List, Tuple, Optional, Union
 from dataclasses import dataclass, field
 from pathlib import Path
-import requests
+
 from datetime import datetime
 from sklearn.metrics import precision_score, recall_score, f1_score
 from sentence_transformers import SentenceTransformer
@@ -21,7 +21,7 @@ from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 
 # Local imports
-from local_llm import chat_with_ollama, generate_with_context
+
 from rag_pipeline import LegalRAGPipeline
 
 # Configure logging
@@ -395,33 +395,23 @@ class LegalModelTrainer:
             try:
                 start_time = time.time()
                 
-                # Generate response
-                if self.use_api:
-                    # For API-based models
-                    messages = [
-                        {"role": "system", "content": "You are a legal assistant providing accurate and concise legal information."},
-                        {"role": "user", "content": example.question}
-                    ]
-                    response = await chat_with_ollama(messages, model=model_name)
-                    response_text = response
-                else:
-                    # For local models
-                    input_ids = self.tokenizer.encode(
-                        f"Question: {example.question}\nAnswer:",
-                        return_tensors="pt"
-                    ).to(self.device)
-                    
-                    outputs = self.model.generate(
-                        input_ids,
-                        max_length=MAX_SEQ_LENGTH,
-                        num_return_sequences=1,
-                        temperature=0.7,
-                        do_sample=True,
-                        pad_token_id=self.tokenizer.eos_token_id
-                    )
-                    
-                    response_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-                    total_tokens += len(self.tokenizer.tokenize(response_text))
+                # Generate response using local model
+                input_ids = self.tokenizer.encode(
+                    f"Question: {example.question}\nAnswer:",
+                    return_tensors="pt"
+                ).to(self.device)
+                
+                outputs = self.model.generate(
+                    input_ids,
+                    max_length=MAX_SEQ_LENGTH,
+                    num_return_sequences=1,
+                    temperature=0.7,
+                    do_sample=True,
+                    pad_token_id=self.tokenizer.eos_token_id
+                )
+                
+                response_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+                total_tokens += len(self.tokenizer.tokenize(response_text))
                 
                 # Calculate metrics
                 elapsed = time.time() - start_time
@@ -494,59 +484,6 @@ class LegalModelTrainer:
                 }
         
         return results
-    
-    async def evaluate_model_response(self, model: str, question: str, ideal_answer: str) -> Dict:
-        """Evaluate model response against ideal answer"""
-        start_time = time.time()
-        
-        try:
-            # Generate response using Ollama generate API
-            system_prompt = "You are an expert Indian legal assistant. Provide accurate, comprehensive legal information."
-            payload = {
-                "model": model,
-                "prompt": f"{system_prompt}\n\nQuestion: {question}",
-                "stream": False,
-                "options": {
-                    "temperature": 0.1,
-                    "num_predict": 1024,
-                }
-            }
-            
-            response = requests.post(
-                "http://localhost:11434/api/generate", 
-                json=payload, 
-                timeout=120
-            )
-            response.raise_for_status()
-            data = response.json()
-            generated_text = data.get("response", "")
-            
-            response_time = time.time() - start_time
-            
-            # Calculate accuracy metrics
-            accuracy_score = self._calculate_accuracy(generated_text, ideal_answer)
-            legal_accuracy = self._calculate_legal_accuracy(generated_text, question)
-            token_efficiency = self._calculate_token_efficiency(generated_text, ideal_answer)
-            
-            return {
-                "response": generated_text,
-                "response_time": response_time,
-                "accuracy_score": accuracy_score,
-                "legal_accuracy": legal_accuracy,
-                "token_efficiency": token_efficiency,
-                "error": None
-            }
-            
-        except Exception as e:
-            logger.error(f"Error evaluating model {model}: {e}")
-            return {
-                "response": None,
-                "response_time": float('inf'),
-                "accuracy_score": 0.0,
-                "legal_accuracy": 0.0,
-                "token_efficiency": 0.0,
-                "error": str(e)
-            }
     
     def _calculate_accuracy(self, response: str, ideal_answer: str) -> float:
         """Calculate semantic accuracy score"""
