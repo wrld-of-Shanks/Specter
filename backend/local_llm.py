@@ -93,7 +93,7 @@ def chat_with_ollama(
 
     try:
         resp = requests.post(
-            _build_ollama_url("/api/chat"), json=payload, timeout=120
+            _build_ollama_url("/api/chat"), json=payload, timeout=5
         )
         resp.raise_for_status()
         data = resp.json()

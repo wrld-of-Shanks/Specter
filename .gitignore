@@ -16,3 +16,4 @@ backend/chroma_db/
 *.sqlite
 evaluation/*.csv
 evaluation/*.log
+evaluation/*.txt
