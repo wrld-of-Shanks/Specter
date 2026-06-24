@@ -3,6 +3,7 @@ import logging
 from pathlib import Path
 from doc_parser import parse_and_chunk
 from embed_store import add_chunks_to_db, _get_collection
+from hybrid_retrieval import rebuild_hybrid_index
 
 logger = logging.getLogger(__name__)
 
@@ -73,5 +74,8 @@ def seed_kb_if_empty():
 
                 if idx % 100 == 0 and idx > 0:
                     logger.info(f"  Processed {idx} records from {source_label}...")
+
+    if total > 0:
+        rebuild_hybrid_index()
 
     logger.info(f"Seeding complete. Added {total} chunks to ChromaDB.")

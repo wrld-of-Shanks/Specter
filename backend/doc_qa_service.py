@@ -8,6 +8,7 @@ import logging
 from typing import Dict, List, Optional
 from doc_parser import parse_and_chunk
 from embed_store import add_chunks_to_db, search_chunks, delete_namespace
+from hybrid_retrieval import hybrid_search, rebuild_hybrid_index
 from local_llm import generate_with_context
 
 logger = logging.getLogger(__name__)
@@ -26,6 +27,8 @@ def index_document(text: str, doc_namespace: str, source_label: str = "uploaded_
         return 0
     count = add_chunks_to_db(chunks, source=source_label, namespace=doc_namespace)
     logger.info(f"Indexed {count} chunks for doc namespace '{doc_namespace}'")
+    if count > 0:
+        rebuild_hybrid_index()
     return count
 
 

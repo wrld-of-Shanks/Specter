@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from document_processor import document_processor
 from legal_analysis import legal_analyzer
 from doc_qa_service import index_document, answer_doc_question, remove_document_index
+from hybrid_retrieval import rebuild_hybrid_index
 import logging
 import uuid
 
@@ -56,6 +57,9 @@ async def upload_document(request: Request, file: UploadFile = File(...)):
 
         doc_namespace = f"doc_{uuid.uuid4().hex[:12]}"
         chunk_count = index_document(text, doc_namespace, source_label=file.filename or "uploaded_doc")
+
+        if chunk_count > 0:
+            rebuild_hybrid_index()
 
         if user:
             await increment_upload_count(str(user["_id"]))

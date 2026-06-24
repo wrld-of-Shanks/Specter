@@ -9,6 +9,7 @@ import re
 from typing import Dict, List, Optional
 
 from embed_store import search_chunks
+from hybrid_retrieval import hybrid_search
 from cache_service import get_cached_answer, set_cached_answer
 
 logger = logging.getLogger(__name__)
@@ -16,6 +17,10 @@ logger = logging.getLogger(__name__)
 SIMILARITY_THRESHOLD = 0.45
 MAX_CONTEXT_CHUNKS = 4
 MAX_HISTORY_TURNS = 6
+
+USE_HYBRID_RETRIEVAL = True
+USE_RERANKER = True
+USE_CITATION_BOOST = True
 
 SITUATION_KEYWORDS = {
     "fake_case": [
@@ -288,9 +293,16 @@ async def answer_query_with_rag(
             logger.info(f"[RAG] Cache hit for query in namespace '{namespace}'")
             return cached
 
-        chunks = search_chunks(query, top_k=MAX_CONTEXT_CHUNKS, namespace=namespace)
+        if USE_HYBRID_RETRIEVAL:
+            chunks = hybrid_search(
+                query, top_k=MAX_CONTEXT_CHUNKS, namespace=namespace,
+                use_reranker=USE_RERANKER,
+                citation_boost=USE_CITATION_BOOST,
+            )
+        else:
+            chunks = search_chunks(query, top_k=MAX_CONTEXT_CHUNKS, namespace=namespace)
 
-        confident_chunks = [c for c in chunks if c["score"] >= SIMILARITY_THRESHOLD]
+        confident_chunks = [c for c in chunks if c.get("rrf_score", c.get("score", 0)) >= SIMILARITY_THRESHOLD]
         low_confidence = len(confident_chunks) == 0
 
         if low_confidence:
